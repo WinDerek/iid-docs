@@ -32,4 +32,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - [ ] Add the login basics (how to ssh with port)
 - [ ] Add installation guide of Anaconda
 - [ ] Add tutorial of `nohup` and `tmux`
+- [ ] Adds the installation guide of oh-my-zsh
 - [ ] Redesign the UI
