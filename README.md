@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Favicon generator
+
+[https://favicon.io/favicon-converter/](https://favicon.io/favicon-converter/)
