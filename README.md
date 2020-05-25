@@ -26,3 +26,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Favicon generator
 
 [https://favicon.io/favicon-converter/](https://favicon.io/favicon-converter/)
+
+## TODO
+
+- [ ] Add the login basics (how to ssh with port)
+- [ ] Add installation guide of Anaconda
+- [ ] Add tutorial of `nohup` and `tmux`
+- [ ] Redesign the UI
