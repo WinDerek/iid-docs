@@ -10,7 +10,7 @@
 <thead>
 <tr>
 <th class="text-left">User</th>
-<th class="text-left">iid-server-1</th>
+<th class="text-left">iid-server-1 (10.19.127.138)</th>
 <th class="text-left">iid-server-2</th>
 </tr>
 </thead>
@@ -54,7 +54,7 @@
         jupyter-lab --ip 0.0.0.0 --port your_port
     </code>
     <p style="padding: 20px; margin: 0;">
-    Then visit <a href="10.19.125.52:your_port/" target="_blank">http://10.19.125.52:your_port/</a>
+    Then visit <a href="http://10.19.127.138:your_port/" target="_blank">http://10.19.127.138:your_port/</a>
     </p>
   </div>
 </template>
