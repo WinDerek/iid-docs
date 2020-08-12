@@ -61,7 +61,7 @@
         jupyter-lab --ip 0.0.0.0 --port your_port
     </code>
     <p style="padding: 20px; margin: 0;">
-    Then visit <a href="http://10.19.127.138:your_port/" target="_blank">http://10.19.127.138:your_port/</a>
+    Then visit <a href="http://server_ip:your_port/" target="_blank">http://10.19.127.138:your_port/</a>
     </p>
   </div>
 </template>
