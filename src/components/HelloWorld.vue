@@ -10,8 +10,8 @@
 <thead>
 <tr>
 <th class="text-left">User</th>
-<th class="text-left">iid-server-1 (10.19.127.138)</th>
-<th class="text-left">iid-server-2</th>
+<th class="text-left">iid-server-1 (10.19.129.132)</th>
+<th class="text-left">iid-server-2 (10.19.129.133)</th>
 </tr>
 </thead>
 <tbody class="table-hover">
@@ -44,7 +44,7 @@
 <tr>
 <td class="text-left">houjf</td>
 <td class="text-left">41501 - 41600</td>
-<td class="text-left">None</td>
+<td class="text-left">41501 - 41600</td>
 </tr>
 
 <tr>
