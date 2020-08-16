@@ -29,6 +29,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## TODO
 
+- [ ] Adds the bulletin board
+- [ ] Adds the message board
 - [ ] Adds the linux auth functionality (run an auth server as root)
 - [ ] Add the login basics (how to ssh with port)
 - [ ] Add installation guide of Anaconda
