@@ -1,6 +1,8 @@
 # iid-server-doc
 
-## Project setup
+## 1. Frontend
+
+### Project setup
 ```
 npm install
 ```
@@ -27,7 +29,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 [https://favicon.io/favicon-converter/](https://favicon.io/favicon-converter/)
 
-## TODO
+## 2. Backend
+
+## 3. TODO
 
 - [ ] Adds the bulletin board
 - [ ] Adds the message board
