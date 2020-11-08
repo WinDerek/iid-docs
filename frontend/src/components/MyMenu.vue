@@ -3,11 +3,12 @@
     <div class="menu-item left logo">
       <img src="../assets/iid2019_logo.svg" style="width: 32px; margin: 20px 0px 20px 20px;" />
     </div>
-
+    
     <div class="menu-item left organization-label">
       <div class="organization-text">IID Server Documentation</div>
     </div>
 
+    <!-- The links -->
     <router-link
       to="/home"
       class="menu-item left black link-label"
