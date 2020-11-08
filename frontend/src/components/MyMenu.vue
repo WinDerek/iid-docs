@@ -3,7 +3,7 @@
     <div class="menu-item left logo">
       <img src="../assets/iid2019_logo.svg" style="width: 32px; margin: 20px 0px 20px 20px;" />
     </div>
-    
+
     <div class="menu-item left organization-label">
       <div class="organization-text">IID Server Documentation</div>
     </div>
@@ -98,6 +98,7 @@ export default {
 
 .logo {
   margin: 4px 8px;
+  user-select: none;
 }
 
 .organization-label {
@@ -147,6 +148,7 @@ export default {
   font-family: "OpenSans";
   padding: 6px 0;
   letter-spacing: 0.25px;
+  user-select: none;
 }
 
 .selected {

@@ -2,9 +2,11 @@
 Component for the tutorial.
  -->
 <template>
-  <div class="tutorial">
-    <h1 class="content__title">Tutorial</h1>
-    <h2>Under construction...</h2>
+  <div class="tutorial SubPage">
+    <div class="content_container">
+      <h1 class="content__title">Tutorial</h1>
+      <p>Under construction...</p>
+    </div>
   </div>
 </template>
 

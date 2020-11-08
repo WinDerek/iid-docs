@@ -11,7 +11,11 @@ Component for interested conferences.
 9. ICDCS
  -->
 <template>
-  <div class="conferences">
+  <div class="conferences SubPage">
+    <div class="content_container">
+      <h1 class="content__title">Conferences</h1>
+      <p>Under construction...</p>
+    </div>
   </div>
 </template>
 

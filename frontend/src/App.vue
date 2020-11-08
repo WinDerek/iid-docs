@@ -46,6 +46,16 @@ export default {
   src: url("./assets/fonts/open_sans_condensed__light.ttf");
 }
 
+.SubPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content_container {
+  width: 680px;
+}
+
 .content__title {
   font-family: "OpenSans";
   font-size: 44px;
