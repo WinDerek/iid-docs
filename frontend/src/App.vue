@@ -27,25 +27,36 @@ export default {
 
 <style>
 @font-face {
-  font-family: "monaco";
+  font-family: "Monaco";
   src: url("./assets/fonts/monaco.ttf");
 }
 
 @font-face {
-  font-family: "roboto";
+  font-family: "Roboto";
   src: url("./assets/fonts/roboto.ttf");
 }
 
-h1 {
-  font-family: "roboto";
-  font-size: 2.0rem;
+@font-face {
+  font-family: "OpenSans";
+  src: url("./assets/fonts/open_sans__regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSansCondensed";
+  src: url("./assets/fonts/open_sans_condensed__light.ttf");
+}
+
+.content__title {
+  font-family: "OpenSans";
+  font-size: 44px;
   text-align: center;
-  text-shadow: 0 3px 2px #aaa;
-  color: #6c7a89;
+  color: #3c4043;
+  font-weight: 400;
+  margin: 12px 0 12px 0;
 }
 
 p {
-  font-family: "roboto";
+  font-family: "Roboto";
 }
 
 #app {

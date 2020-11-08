@@ -29,6 +29,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 [https://favicon.io/favicon-converter/](https://favicon.io/favicon-converter/)
 
+### Frontend code style
+
+- JavaScript: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+- CSS: [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
+
 ## 2. Backend
 
 ## 3. TODO
