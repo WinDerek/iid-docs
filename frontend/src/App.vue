@@ -1,29 +1,74 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/iid_logo.png" style="max-height: 100px; max-width: 40%; margin: 20px 10px;">
-    <HelloWorld />
+    <my-menu></my-menu>
+
+    <transition name="fade" mode="out-in">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyMenu from '@/components/MyMenu.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MyMenu
+  },
+  data: function () {
+    return {
+    }
+  },
+  created () {
   }
-}
+};
 </script>
 
 <style>
+@font-face {
+  font-family: "monaco";
+  src: url("./assets/fonts/monaco.ttf");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/roboto.ttf");
+}
+
+h1 {
+  font-family: "roboto";
+  font-size: 2.0rem;
+  text-align: center;
+  text-shadow: 0 3px 2px #aaa;
+  color: #6c7a89;
+}
+
+p {
+  font-family: "roboto";
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  background: #e4f1fe;
-  min-height: 100%;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.06s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 </style>
