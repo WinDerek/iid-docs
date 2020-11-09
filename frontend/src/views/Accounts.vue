@@ -8,6 +8,10 @@ Component for displaying the information of all the accounts on our servers.
 
       <h2 class="content__subtitle">Port allocation</h2>
 
+      <p>
+        The accounts on each server
+      </p>
+
       <table class="table-fill">
         <thead>
         <tr>

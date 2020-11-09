@@ -1,7 +1,7 @@
 <template>
   <div class="my-menu">
     <div class="menu-item-flex left logo">
-      <img src="../assets/iid2019_logo.svg" style="width: 32px; margin: 20px 0px 20px 20px;" />
+      <img src="../assets/images/iid2019_logo.svg" style="width: 32px; margin: 20px 0px 20px 20px;" />
     </div>
 
     <div class="menu-item-flex left organization-label">
@@ -22,8 +22,7 @@
       to="/accounts"
       class="menu-item-block left black link-label"
       :class="{ selected: selectedIndex === 1 }"
-      v-on:click.native="onLinkClicked(1)"
-    >
+      v-on:click.native="onLinkClicked(1)">
       <div class="link-text-container">
         <div class="link-text">Accounts</div>
       </div>

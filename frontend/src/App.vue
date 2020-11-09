@@ -39,7 +39,14 @@ export default {
 
 @font-face {
   font-family: "Roboto";
-  src: url("./assets/fonts/roboto.ttf");
+  font-weight: 300;
+  src: url("./assets/fonts/roboto__regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 200;
+  src: url("./assets/fonts/roboto__light.ttf");
 }
 
 @font-face {
@@ -60,6 +67,10 @@ export default {
 
 .content_container {
   width: 680px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .content_container > *::selection {
@@ -72,7 +83,7 @@ export default {
   text-align: center;
   color: #3c4043;
   font-weight: 400;
-  margin: 12px 0 12px 0;
+  margin: 16px 0 32px 0;
 }
 
 .content__subtitle {
@@ -81,11 +92,23 @@ export default {
   text-align: start;
   color: #3c4043;
   font-weight: 400;
-  margin: 12px 0 12px 0;
+  margin: 12px 0 24px 0;
 }
 
-p {
+.content_container > p {
   font-family: "Roboto";
+  color: #202124;
+  line-height: 1.7;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 200;
+  word-wrap: break-word;
+}
+
+.content__image {
+  width: 100%;
+  margin: 12px 0 24px 0;
 }
 
 #app {

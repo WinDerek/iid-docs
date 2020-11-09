@@ -5,7 +5,19 @@ Component for the tutorial.
   <div class="tutorial SubPage">
     <div class="content_container">
       <h1 class="content__title">Tutorial</h1>
-      <p>Under construction...</p>
+
+      <img class="content__image" src="../assets/images/tutorial.png" />
+      
+      <h2 class="content__subtitle">Jupyter Lab</h2>
+      <p>
+        Example of running Jupyter Lab on port 41001:
+      </p>
+
+      <code class="normal">jupyter-lab --ip 0.0.0.0 --port 41001</code>
+      
+      <p>
+        Then visit <a href="http://server_ip:your_port/" target="_blank">http://10.19.129.132:41001/</a>
+      </p>
     </div>
   </div>
 </template>
@@ -23,4 +35,24 @@ export default {
 </script>
 
 <style scoped>
+a {
+  color: #42b983;
+}
+
+code {
+  font-family: "Monaco";
+  color: white;
+  background: #2e3131;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+code::before, code.normal::before {
+  content: "$ ";
+}
+
+code.root::before {
+  content: "# ";
+}
 </style>
