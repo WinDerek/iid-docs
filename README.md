@@ -34,6 +34,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - JavaScript: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - CSS: [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
 
+### UI design references
+
+- [Google AI](https://ai.google/)
+
 ## 2. Backend
 
 ## 3. TODO
