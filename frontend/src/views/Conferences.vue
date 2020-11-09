@@ -14,7 +14,7 @@ Component for interested conferences.
   <div class="conferences SubPage">
     <div class="content_container">
       <h1 class="content__title">Conferences</h1>
-      <p>Under construction...</p>
+      <p>The timeline for some conferences.</p>
     </div>
   </div>
 </template>

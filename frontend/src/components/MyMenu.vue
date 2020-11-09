@@ -5,7 +5,7 @@
     </div>
 
     <div class="menu-item-flex left organization-label">
-      <div class="organization-text">IID Server Documentation</div>
+      <div class="organization-text">IID Docs</div>
     </div>
 
     <!-- The links -->

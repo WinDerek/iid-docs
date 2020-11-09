@@ -49,7 +49,7 @@ Component for displaying the information of all the accounts on our servers.
         </tr>
 
         <tr>
-        <td class="text-left">houjf</td>
+        <td class="text-left">derek</td>
         <td class="text-left">41501 - 41600</td>
         <td class="text-left">41501 - 41600</td>
         </tr>
@@ -104,7 +104,6 @@ export default {
   padding: 5px;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  animation: float 5s infinite;
 }
  
 th {
