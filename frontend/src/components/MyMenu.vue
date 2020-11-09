@@ -1,53 +1,59 @@
 <template>
   <div class="my-menu">
-    <div class="menu-item left logo">
+    <div class="menu-item-flex left logo">
       <img src="../assets/iid2019_logo.svg" style="width: 32px; margin: 20px 0px 20px 20px;" />
     </div>
 
-    <div class="menu-item left organization-label">
+    <div class="menu-item-flex left organization-label">
       <div class="organization-text">IID Server Documentation</div>
     </div>
 
     <!-- The links -->
     <router-link
       to="/home"
-      class="menu-item left black link-label"
+      class="menu-item-block left black link-label"
       :class="{ selected: selectedIndex === 0 }"
-      v-on:click.native="selectedIndex = 0"
-    >
-      <div class="link-text">Home</div>
+      v-on:click.native="onLinkClicked(0)">
+      <div class="link-text-container">
+        <div class="link-text">Home</div>
+      </div>
     </router-link>
     <router-link
       to="/accounts"
-      class="menu-item left black link-label"
+      class="menu-item-block left black link-label"
       :class="{ selected: selectedIndex === 1 }"
-      v-on:click.native="selectedIndex = 1"
+      v-on:click.native="onLinkClicked(1)"
     >
-      <div class="link-text">Accounts</div>
+      <div class="link-text-container">
+        <div class="link-text">Accounts</div>
+      </div>
     </router-link>
     <router-link
       to="/tutorial"
-      class="menu-item left black link-label"
+      class="menu-item-block left black link-label"
       :class="{ selected: selectedIndex === 2 }"
-      v-on:click.native="selectedIndex = 2"
-    >
-      <div class="link-text">Tutorial</div>
+      v-on:click.native="onLinkClicked(2)">
+      <div class="link-text-container">
+        <div class="link-text">Tutorial</div>
+      </div>
     </router-link>
     <router-link
       to="/conferences"
-      class="menu-item left black link-label"
+      class="menu-item-block left black link-label"
       :class="{ selected: selectedIndex === 3 }"
-      v-on:click.native="selectedIndex = 3"
-    >
-      <div class="link-text">Conferences</div>
+      v-on:click.native="onLinkClicked(3)">
+      <div class="link-text-container">
+        <div class="link-text">Conferences</div>
+      </div>
     </router-link>
     <router-link
       to="/birthdays"
-      class="menu-item left black link-label"
+      class="menu-item-block left black link-label"
       :class="{ selected: selectedIndex === 4 }"
-      v-on:click.native="selectedIndex = 4"
-    >
-      <div class="link-text">Birthdays</div>
+      v-on:click.native="onLinkClicked(4)">
+      <div class="link-text-container">
+        <div class="link-text">Birthdays</div>
+      </div>
     </router-link>
   </div>
 </template>
@@ -55,6 +61,10 @@
 <script>
 export default {
   name: "MyMenu",
+  model: {
+    prop: 'selectedIndex',
+    event: 'selectedIndexChange'
+  },
   props: {
     selectedIndex: {
       type: Number,
@@ -65,7 +75,11 @@ export default {
   data: function() {
     return {};
   },
-  methods: {}
+  methods: {
+    onLinkClicked(index) {
+      this.$emit('selectedIndexChange', index);
+    }
+  }
 };
 </script>
 
@@ -122,33 +136,60 @@ export default {
   float: right;
 }
 
-.menu-item {
+.menu-item-flex {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
 }
 
+.menu-item-block {
+  display: block;
+}
+
 .link-label {
-  text-align: center;
   text-decoration: none;
   margin: 0 18px;
 
-  border: solid 3px transparent;
+  position: relative;
+
+  overflow: hidden;
 }
 
 .link-label:hover {
   color: #000000;
-  border-bottom: solid 3px #2c82c9ff;
-  transition: color 0.25s linear, border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s linear;
 }
 
-.link-text {
+.link-text-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 14px;
   font-family: "OpenSans";
-  padding: 6px 0;
   letter-spacing: 0.25px;
   user-select: none;
+}
+
+.link-label::after {
+  content: "";
+  background: #2c82c9ff;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  transform: translateY(100%);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-label:hover::after {
+  transform: translateY(0);
 }
 
 .selected {
