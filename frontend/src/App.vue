@@ -66,7 +66,7 @@ export default {
 }
 
 .content_container {
-  width: 680px;
+  width: 800px;
 
   display: flex;
   flex-direction: column;
