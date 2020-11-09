@@ -3,7 +3,7 @@
     <my-menu v-model="menuSelectedIndex" v-on:selectedIndexChange="onMenuSelectedIndexChange"></my-menu>
 
     <transition name="fade" mode="out-in">
-      <router-view/>
+      <router-view />
     </transition>
   </div>
 </template>
@@ -62,10 +62,23 @@ export default {
   width: 680px;
 }
 
+.content_container > *::selection {
+  background: #89c4f466;
+}
+
 .content__title {
   font-family: "OpenSans";
   font-size: 44px;
   text-align: center;
+  color: #3c4043;
+  font-weight: 400;
+  margin: 12px 0 12px 0;
+}
+
+.content__subtitle {
+  font-family: "OpenSans";
+  font-size: 28px;
+  text-align: start;
   color: #3c4043;
   font-weight: 400;
   margin: 12px 0 12px 0;
