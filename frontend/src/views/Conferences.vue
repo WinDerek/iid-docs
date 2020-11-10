@@ -95,9 +95,18 @@ export default {
 
     this.eventArray.push({
       timeMillis: Date.now(),
+      timeString: "2021.1.19",
+      title: "IJCAI 2021",
+      note: "IJCAI conference 2021.",
+      side: "left",
+      ended: false
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
       timeString: "2021.2.5",
       title: "ICML 2021",
-      note: "ICML conference 2021. Ended.",
+      note: "ICML conference 2021.",
       side: "left",
       ended: false
     });
