@@ -9,21 +9,25 @@ npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Favicon generator
@@ -38,8 +42,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### UI design references
 
 - [Google AI](https://ai.google/)
-
-## 2. Backend
 
 ## 3. TODO
 
