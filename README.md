@@ -1,8 +1,9 @@
-# iid-server-doc
+# IID Docs
 
 ## 1. Frontend
 
 ### Project setup
+
 ```
 npm install
 ```
@@ -42,11 +43,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 3. TODO
 
-- [ ] Adds the bulletin board
-- [ ] Adds the message board
-- [ ] Adds the linux auth functionality (run an auth server as root)
 - [ ] Add the login basics (how to ssh with port)
 - [ ] Add installation guide of Anaconda
 - [ ] Add tutorial of `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
-- [ ] Redesign the UI
+- [x] Redesign the UI

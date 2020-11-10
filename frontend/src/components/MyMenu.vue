@@ -56,7 +56,7 @@
     </router-link>
 
     <div class="menu-item-flex github-link">
-      <a href="https://github.com/derekdick/iid-server-doc" target="_blank"><img src="../assets/images/github_mark.png" style="width: 32px;" /></a>
+      <a href="https://github.com/DerekDick/iid-docs" target="_blank"><img src="../assets/images/github_mark.png" style="width: 32px;" /></a>
     </div>
   </div>
 </template>
