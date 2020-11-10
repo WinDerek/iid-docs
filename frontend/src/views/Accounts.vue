@@ -9,7 +9,7 @@ Component for displaying the information of all the accounts on our servers.
       <h2 class="content__subtitle">Port allocation</h2>
 
       <p>
-        The accounts on each server
+        The accounts on each server with the corresponding allocated ports are listed below:
       </p>
 
       <table class="table-fill">

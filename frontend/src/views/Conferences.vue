@@ -41,42 +41,101 @@ export default {
   created () {
     this.eventArray.push({
       timeMillis: Date.now(),
-      timeString: "xxxx.xx.xx",
+      timeString: "2020.2.6",
+      title: "ICML 2020",
+      note: "ICML conference 2020. Ended.",
+      side: "left",
+      ended: true
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "2020.3.25",
+      title: "MobiCom 2020",
+      note: "MobiCom conference 2020. Ended.",
+      side: "right",
+      ended: true
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "2020.5.29",
+      title: "GLOBECOM 2020",
+      note: "GLOBECOM conference 2020. Ended.",
+      side: "right",
+      ended: true
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "2020.6.5",
+      title: "NIPS 2020",
+      note: "NeurIPS conference 2020. Ended.",
+      side: "left",
+      ended: true
+    });
+    
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "2020.9.9",
+      title: "AAAI 2021",
+      note: "AAAI conference 2021. Ended.",
+      side: "left",
+      ended: true
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "2020.10.31",
+      title: "ICC 2021",
+      note: "ICC conference 2021. Ended.",
+      side: "right",
+      ended: true
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "2021.2.5",
+      title: "ICML 2021",
+      note: "ICML conference 2021. Ended.",
+      side: "left",
+      ended: false
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "TBD",
+      title: "NIPS 2021",
+      note: "NeurIPS conference 2021.",
+      side: "left",
+      ended: false
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "TBD",
       title: "AAAI 2022",
       note: "AAAI conference 2022.",
-      side: "left"
+      side: "left",
+      ended: false
     });
 
     this.eventArray.push({
       timeMillis: Date.now(),
-      timeString: "xxxx.xx.xx",
+      timeString: "TBD",
       title: "ICC 2022",
       note: "ICC conference 2022.",
-      side: "right"
+      side: "right",
+      ended: false
     });
 
     this.eventArray.push({
       timeMillis: Date.now(),
-      timeString: "xxxx.xx.xx",
-      title: "NIPS 2022",
-      note: "NeurIPS conference 2022.",
-      side: "left"
-    });
-
-    this.eventArray.push({
-      timeMillis: Date.now(),
-      timeString: "xxxx.xx.xx",
-      title: "GLOBECOM 2022",
-      note: "GLOBECOM conference 2022.",
-      side: "right"
-    });
-
-    this.eventArray.push({
-      timeMillis: Date.now(),
-      timeString: "xxxx.xx.xx",
+      timeString: "TBD",
       title: "ICML 2022",
       note: "ICML conference 2022.",
-      side: "left"
+      side: "left",
+      ended: false
     });
   },
   methods: {}

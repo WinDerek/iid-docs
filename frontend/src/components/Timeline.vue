@@ -9,17 +9,15 @@ Each event in this component happens exactly at some time point. This component 
   <div class="timeline">
     <div
       class="event"
-      :class="{ 'event--left': event.side === 'left', 'event--right': event.side === 'right' }"
+      :class="{ 'event--left': event.side === 'left', 'event--right': event.side === 'right', 'ended': event.ended }"
       v-for="(event, index) in eventArray"
       v-bind:key="index">
-      <div class="event__header" :class="{ 'left': event.side === 'left', 'right': event.side === 'right' }">
-        <h2 class="event__title">{{ event.title }}</h2>
-        <h3
-          class="event__time"
-        >{{ event.timeString === undefined ? Date.parse(event.timeMillis) : event.timeString }}</h3>
+      <div class="event__header" :class="{ 'left': (event.side === 'left') && (!event.ended), 'right': (event.side === 'right') && (!event.ended), 'ended': event.ended }">
+        <h3 class="event__time" :class="{ 'ended': event.ended }">{{ event.timeString === undefined ? Date.parse(event.timeMillis) : event.timeString }}</h3>
+        <h2 class="event__title" :class="{ 'ended': event.ended }">{{ event.title }}</h2>
       </div>
       <div class="event__body">
-        <p class="event__note">{{ event.note }}</p>
+        <p class="event__note" :class="{ 'ended': event.ended }">{{ event.note }}</p>
       </div>
     </div>
   </div>
@@ -39,6 +37,7 @@ export default {
      * - title: String, the title of the event.
      * - note: String, the additional note for the event.
      * - side: String, legal values: [ 'left', 'right' ].
+     * - ended: Boolean, true if the event is ended and false otherwise.
      */
     eventArray: {
       type: Array,
@@ -71,7 +70,7 @@ export default {
   justify-content: flex-start;
 
   width: 100%;
-  height: 2800px;
+  /* height: 2800px; */
   position: relative;
 }
 
@@ -88,7 +87,7 @@ export default {
 .event {
   width: 45%;
   margin: 16px 0 16px 0;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -116,6 +115,11 @@ export default {
   transform: translateY(-50%);
 }
 
+.event--left.ended::before {
+  border-left: 10px solid #bdc3c7;
+}
+
+/* The central circle. */
 .event--left::after {
   content: "";
   position: absolute;
@@ -133,14 +137,21 @@ export default {
   content: "";
   position: absolute;
   left: -9px;
-  top: 20px;
+  top: 30px;
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 10px solid #ee4d4d;
+
+  transform: translateY(-50%);
 }
 
+.event--right.ended::before {
+  border-right: 10px solid #bdc3c7;
+}
+
+/* The central circle. */
 .event--right::after {
   content: "";
   position: absolute;
@@ -158,8 +169,24 @@ export default {
   background: #2c82c9ff;
 }
 
+.event__header.left > *::selection {
+  background: #aaaaaa;
+}
+
 .event__header.right {
   background: #ee4d4d;
+}
+
+.event__header.right > *::selection {
+  background: #aaaaaa;
+}
+
+.event__header.ended {
+  background: #bdc3c7;
+}
+
+.event__header.ended > *::selection {
+  background: #89c4f466;
 }
 
 .event__title {
@@ -168,24 +195,36 @@ export default {
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
-  color: white;
-  padding: 12px;
+  color: #fafafa;
+  padding: 0 12px 8px 12px;
   margin: 0;
+}
+
+.event__title.ended {
+  color: #ffffff;
 }
 
 .event__time {
   font-family: "OpenSans";
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
-  color: white;
-  padding: 0 12px 12px 12px;
+  color: #fafafa;
+  padding: 8px 12px 2px 12px;
   margin: 0;
+}
+
+.event__time.ended {
+  color: #ffffff;
 }
 
 .event__body {
   background: white;
+}
+
+.event__body > *::selection {
+  background: #89c4f466;
 }
 
 .event__note {
@@ -195,5 +234,9 @@ export default {
   color: #202124;
   padding: 12px;
   margin: 0;
+}
+
+.event__note.ended {
+  color: #666666;
 }
 </style>
