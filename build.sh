@@ -2,3 +2,4 @@
 
 cd frontend
 bash ./build.sh
+cd -
