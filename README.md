@@ -1,5 +1,7 @@
 # IID Docs
 
+[https://derekdick.github.io/iid-docs/](https://derekdick.github.io/iid-docs/)
+
 The documentation website for the IID laboratory.
 
 ## Development
