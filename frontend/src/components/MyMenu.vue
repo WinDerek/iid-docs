@@ -90,8 +90,8 @@ export default {
 .my-menu {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   width: 100%;
-  position: relative;
   background-color: #ffffff;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
 
