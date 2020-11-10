@@ -6,6 +6,10 @@ cache: npm
 
 script: build.sh
 
+branches:
+  only:
+  - master
+
 deploy:
   provider: pages
   skip_cleanup: true
