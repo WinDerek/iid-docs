@@ -1,47 +1,20 @@
 # IID Docs
 
-## 1. Frontend
+The documentation website for the IID laboratory.
 
-### Project setup
+## Development
 
-```
-npm install
-```
+[frontend](frontend)
 
-### Compiles and hot-reloads for development
+## UI design
 
-```
-npm run serve
-```
+Some CSS styles of this website are inspired by [Google AI](https://ai.google/).
 
-### Compiles and minifies for production
+## Logo design
 
-```
-npm run build
-```
+The logo of IID Docs is design by [Derek](https://github.com/DerekDick) using [inkscape](https://inkscape.org/).
 
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### Favicon generator
-
-[https://favicon.io/favicon-converter/](https://favicon.io/favicon-converter/)
-
-### Frontend code style
-
-- JavaScript: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-- CSS: [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
-
-### UI design references
-
-- [Google AI](https://ai.google/)
+<img src="./logo/iid2019_logo.png" width="200" alt="IID Docs Logo" />
 
 ## 3. TODO
 
