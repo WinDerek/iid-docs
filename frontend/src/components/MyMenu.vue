@@ -54,6 +54,10 @@
         <div class="link-text">Birthdays</div>
       </div>
     </router-link>
+
+    <div class="menu-item-flex github-link">
+      <a href="https://github.com/derekdick/iid-server-doc" target="_blank"><img src="../assets/images/github_mark.png" style="width: 32px;" /></a>
+    </div>
   </div>
 </template>
 
@@ -193,5 +197,11 @@ export default {
 
 .selected {
   color: #000000;
+}
+
+.github-link {
+  position: absolute;
+  right: 0;
+  padding: 20px;
 }
 </style>
