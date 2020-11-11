@@ -125,9 +125,10 @@ export default {
   position: absolute;
   right: -32.5px;
   top: 30px;
-  width: 32px;
-  height: 32px;
-  border-radius: 1000px;
+  width: 16px;
+  height: 16px;
+  border: 4px solid #aea8d3;
+  border-radius: 50%;
   background: #674172;
 
   transform: translate(50%, -50%);
@@ -157,9 +158,10 @@ export default {
   position: absolute;
   left: -27.5px;
   top: 30px;
-  width: 32px;
-  height: 32px;
-  border-radius: 1000px;
+  width: 16px;
+  height: 16px;
+  border: 4px solid #aea8d3;
+  border-radius: 50%;
   background: #674172;
 
   transform: translate(-50%, -50%);
@@ -191,7 +193,7 @@ export default {
 
 .event__title {
   font-family: "Roboto";
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
