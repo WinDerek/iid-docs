@@ -66,11 +66,17 @@ export default {
 }
 
 .content_container {
-  width: 800px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+@media only screen and (min-width: 800px) {
+  .content_container {
+    width: 800px;
+  }
 }
 
 .content_container > *::selection {
@@ -92,7 +98,7 @@ export default {
   text-align: start;
   color: #3c4043;
   font-weight: 400;
-  margin: 12px 0 24px 0;
+  margin: 12px 24px 24px 24px;
 }
 
 .content_container > p {
@@ -104,6 +110,8 @@ export default {
   text-decoration: none;
   font-weight: 200;
   word-wrap: break-word;
+
+  margin: 12px 24px 24px 24px;
 }
 
 .content__image {
