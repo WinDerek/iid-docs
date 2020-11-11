@@ -68,7 +68,7 @@ export default {
 
     this.eventArray.push({
       timeMillis: Date.now(),
-      timeString: "2020.6.5",
+      timeString: "2020.6.6",
       title: "NIPS 2020",
       note: "NeurIPS conference 2020. Ended.",
       side: "left",

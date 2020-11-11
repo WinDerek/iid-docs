@@ -24,4 +24,5 @@ The logo of IID Docs is design by [Derek](https://github.com/DerekDick) using [i
 - [ ] Add installation guide of Anaconda
 - [ ] Add tutorial of `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
+- [ ] Adds the r4
 - [x] Redesign the UI

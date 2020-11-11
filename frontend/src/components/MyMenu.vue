@@ -55,8 +55,12 @@
       </div>
     </router-link>
 
-    <div class="menu-item-flex github-link">
-      <a href="https://github.com/DerekDick/iid-docs" target="_blank"><img src="../assets/images/github_mark.png" style="width: 32px;" /></a>
+    <div class="menu-item-flex github-link-container">
+      <a href="https://github.com/DerekDick/iid-docs" target="_blank">
+        <span>GitHub</span>
+
+        <img src="../assets/images/github_mark.png" style="width: 24px;" />
+      </a>
     </div>
   </div>
 </template>
@@ -199,9 +203,28 @@ export default {
   color: #000000;
 }
 
-.github-link {
+.github-link-container {
   position: absolute;
   right: 0;
   padding: 20px;
+}
+
+.github-link-container > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.github-link-container > a > * {
+  font-family: "OpenSans";
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  font-style: normal;
+  user-select: none;
+  margin: 4px 4px;
 }
 </style>
