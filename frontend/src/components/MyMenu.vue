@@ -103,6 +103,8 @@ export default {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
+
+  position: relative;
 }
 
 .white {
@@ -205,7 +207,9 @@ export default {
 
 .github-link-container {
   position: absolute;
+  top: 0;
   right: 0;
+  bottom: 0;
   padding: 20px;
 }
 
