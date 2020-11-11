@@ -29,6 +29,6 @@ The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using
 - [ ] Add installation guide of Anaconda
 - [ ] Add tutorial of `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
-- [ ] Makes the website responsive to narrow screens like mobile screens
+- [x] Makes the website responsive to narrow screens like mobile screens
 - [ ] Fixes the timeline central line pixel perfect problem
 - [x] Redesign the UI
