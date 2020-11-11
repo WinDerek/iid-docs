@@ -71,6 +71,12 @@ Component for displaying the information of all the accounts on our servers.
         <td class="text-left">41801 - 41900</td>
         <td class="text-left">None</td>
         </tr>
+
+        <tr>
+        <td class="text-left">taou</td>
+        <td class="text-left">41901 - 42000</td>
+        <td class="text-left">None</td>
+        </tr>
         </tbody>
       </table>
 
