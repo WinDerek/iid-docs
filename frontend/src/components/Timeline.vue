@@ -70,7 +70,6 @@ export default {
   justify-content: flex-start;
 
   width: 100%;
-  /* height: 2800px; */
   position: relative;
 }
 
@@ -82,6 +81,8 @@ export default {
   position: absolute;
   left: 50%;
   top: 0;
+
+  transform: translateX(-50%);
 }
 
 .event {
@@ -123,7 +124,7 @@ export default {
 .event--left::after {
   content: "";
   position: absolute;
-  right: -32.5px;
+  right: -30px;
   top: 30px;
   width: 16px;
   height: 16px;
@@ -156,7 +157,7 @@ export default {
 .event--right::after {
   content: "";
   position: absolute;
-  left: -27.5px;
+  left: -30px;
   top: 30px;
   width: 16px;
   height: 16px;
