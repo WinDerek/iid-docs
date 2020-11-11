@@ -9,7 +9,7 @@ Component for the home page.
       <img class="content__image" src="../assets/images/home.jpg" />
 
       <p>
-        The original purpose of this website is to demonstrate useful instructions for the members of the IID laboratory to conduct simulations on our Linux servers.
+        The original purpose of this website was to demonstrate useful instructions for the members of the IID laboratory to conduct simulations on our Linux servers.
         As time passes by, our group grows larger and I think it is necessary to re-design the UI and reposition this website.
         Now this website not only serves as the documentation site for our servers, but also presents other useful information like the timeline of some conferences, etc.
       </p>

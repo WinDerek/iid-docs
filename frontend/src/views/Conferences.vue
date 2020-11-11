@@ -116,7 +116,7 @@ export default {
       timeString: "2021.2.22",
       title: "IWQoS 2021",
       note: "IWQoS conference 2021.",
-      side: "left",
+      side: "right",
       ended: false
     });
 
