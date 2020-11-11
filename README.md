@@ -4,6 +4,11 @@
 
 The documentation website for the IID laboratory.
 
+## Features
+
+- Built from scratch, without using any templates
+- Responsive UI layout (移动端适配)
+
 ## Development
 
 [frontend](frontend)
@@ -14,7 +19,7 @@ Some CSS styles of this website are inspired by [Google AI](https://ai.google/).
 
 ## Logo design
 
-The logo of IID Docs is design by [Derek](https://github.com/DerekDick) using [inkscape](https://inkscape.org/).
+The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using [inkscape](https://inkscape.org/).
 
 <img src="./logo/iid2019_logo.png" width="200" alt="IID Docs Logo" />
 
@@ -24,5 +29,6 @@ The logo of IID Docs is design by [Derek](https://github.com/DerekDick) using [i
 - [ ] Add installation guide of Anaconda
 - [ ] Add tutorial of `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
-- [ ] Adds the r4
+- [ ] Makes the website responsive to narrow screens like mobile screens
+- [ ] Fixes the timeline central line pixel perfect problem
 - [x] Redesign the UI
