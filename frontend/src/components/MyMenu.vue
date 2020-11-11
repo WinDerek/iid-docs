@@ -59,7 +59,7 @@
       <a href="https://github.com/DerekDick/iid-docs" target="_blank">
         <span>GitHub</span>
 
-        <img src="../assets/images/github_mark.png" style="width: 24px;" />
+        <img src="../assets/images/github_mark_32px.png" style="width: 32px;" />
       </a>
     </div>
   </div>
@@ -219,6 +219,7 @@ export default {
   align-items: center;
   text-decoration: none;
   font-style: normal;
+  font-size: 20px;
 }
 
 .github-link-container > a > * {
