@@ -73,7 +73,7 @@
 
       <nav id="mobileMenu" :class="{ active: toggleButtonActive }">
         <ul>
-          <li>
+          <!-- <li>
             <router-link
               to="/home"
               class="mobile-menu-link-label"
@@ -130,6 +130,55 @@
               <div class="mobile-menu-link-text-container">
                 <div class="mobile-menu-link-text">Birthdays</div>
               </div>
+            </router-link>
+          </li> -->
+          <li>
+            <router-link
+              to="/home"
+              class="mobile-menu-link-label"
+              :class="{ selected: selectedIndex === 0 }"
+              v-on:click.native="onMobileMenuLinkClicked(0)">
+              Home
+            </router-link>
+          </li>
+
+          <li>
+            <router-link
+              to="/home"
+              class="mobile-menu-link-label"
+              :class="{ selected: selectedIndex === 1 }"
+              v-on:click.native="onMobileMenuLinkClicked(1)">
+              Accounts
+            </router-link>
+          </li>
+
+          <li>
+            <router-link
+              to="/home"
+              class="mobile-menu-link-label"
+              :class="{ selected: selectedIndex === 2 }"
+              v-on:click.native="onMobileMenuLinkClicked(2)">
+              Tutorial
+            </router-link>
+          </li>
+
+          <li>
+            <router-link
+              to="/home"
+              class="mobile-menu-link-label"
+              :class="{ selected: selectedIndex === 3 }"
+              v-on:click.native="onMobileMenuLinkClicked(3)">
+              Conferences
+            </router-link>
+          </li>
+
+          <li>
+            <router-link
+              to="/home"
+              class="mobile-menu-link-label"
+              :class="{ selected: selectedIndex === 4 }"
+              v-on:click.native="onMobileMenuLinkClicked(4)">
+              Birthdays
             </router-link>
           </li>
         </ul>
@@ -376,8 +425,14 @@ export default {
   cursor: pointer;
 }
 
+.toggle-button .line:nth-child(2) {
+  transition: none;
+}
+
 .toggle-button.active .line:nth-child(2) {
   opacity: 0;
+
+  background-color: #eeeeee;
 }
 
 .toggle-button.active .line:nth-child(1) {
@@ -426,30 +481,25 @@ export default {
 }
 
 #mobileMenu > ul {
-  display: inline;
+  display: block;
   list-style: none;
   margin: 0;
+  padding: 24px 32px;
 }
 
 #mobileMenu > ul > li {
+  display: block;
   margin: 0;
   padding: 0;
 }
 
 .mobile-menu-link-label {
   text-decoration: none;
-  margin: 0 18px;
+  margin: 0 0 24px 0;
+
+  display: block;
 
   overflow: hidden;
-}
-
-.mobile-menu-link-text-container {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   font-size: 20px;
   font-family: "OpenSans";
