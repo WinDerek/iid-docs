@@ -41,6 +41,15 @@ export default {
   created () {
     this.eventArray.push({
       timeMillis: Date.now(),
+      timeString: "2020.1.13",
+      title: "ICDCS 2020",
+      note: "ICDCS conference 2020. Ended.",
+      side: "right",
+      ended: true
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
       timeString: "2020.2.6",
       title: "ICML 2020",
       note: "ICML conference 2020. Ended.",
@@ -100,6 +109,15 @@ export default {
       note: "ICC conference 2021. Ended.",
       side: "right",
       ended: true
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "2021.1.13",
+      title: "ICDCS 2021",
+      note: "ICDCS conference 2021.",
+      side: "right",
+      ended: false
     });
 
     this.eventArray.push({
