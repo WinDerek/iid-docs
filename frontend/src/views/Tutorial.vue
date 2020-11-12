@@ -43,10 +43,16 @@ code {
   font-family: "Monaco";
   color: white;
   background: #2e3131;
-  padding: 10px 20px;
+  padding: 10px 16px;
   border-radius: 3px;
   font-size: 14px;
   margin: 12px 24px 24px 24px;
+
+  display: block;
+  white-space: nowrap;
+  /* max-width: 100%; */
+  width: auto;
+  overflow-x: scroll;
 }
 
 code::before, code.normal::before {
