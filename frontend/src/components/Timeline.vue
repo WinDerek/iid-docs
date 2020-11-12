@@ -194,7 +194,7 @@ export default {
 
 .event__title {
   font-family: "Roboto";
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
@@ -209,7 +209,7 @@ export default {
 
 .event__time {
   font-family: "OpenSans";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
@@ -232,7 +232,7 @@ export default {
 
 .event__note {
   font-family: "Roboto";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   color: #202124;
   padding: 12px;
@@ -241,5 +241,20 @@ export default {
 
 .event__note.ended {
   color: #666666;
+}
+
+/* For narrow screens. */
+@media only screen and (min-width: 800px) {
+  .event__title {
+    font-size: 28px;
+  }
+
+  .event__time {
+    font-size: 20px;
+  }
+
+  .event__note {
+    font-family: 18px;
+  }
 }
 </style>

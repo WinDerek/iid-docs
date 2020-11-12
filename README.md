@@ -33,3 +33,4 @@ The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using
 - [ ] Fixes the timeline central line pixel perfect problem
 - [x] Redesign the UI
 - [ ] Adds the acceptance dates for conferences
+- [ ] Make table scroll horizontally on narrow screens
