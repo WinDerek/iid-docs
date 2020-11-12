@@ -12,74 +12,75 @@ Component for displaying the information of all the accounts on our servers.
         The accounts on each server with the corresponding allocated ports are listed below:
       </p>
 
-      <table class="table-fill">
-        <thead>
-        <tr>
-        <th class="text-left">User</th>
-        <th class="text-left">iid-server-1 (10.19.129.132)</th>
-        <th class="text-left">iid-server-2 (10.19.129.133)</th>
-        </tr>
-        </thead>
+      <div class="table-container">
+        <table class="table-fill">
+          <thead>
+          <tr>
+          <th class="text-left">User</th>
+          <th class="text-left">iid-server-1 (10.19.129.132)</th>
+          <th class="text-left">iid-server-2 (10.19.129.133)</th>
+          </tr>
+          </thead>
 
-        <tbody class="table-hover">
-        <tr>
-        <td class="text-left">xin</td>
-        <td class="text-left">41001 - 41100</td>
-        <td class="text-left">None</td>
-        </tr>
-        <tr>
-        <td class="text-left">bian</td>
-        <td class="text-left">41101 - 41200</td>
-        <td class="text-left">None</td>
-        </tr>
-        <tr>
-        <td class="text-left">lengqy</td>
-        <td class="text-left">41201 - 41300</td>
-        <td class="text-left">None</td>
-        </tr>
-        <tr>
-        <td class="text-left">xih</td>
-        <td class="text-left">41301 - 41400</td>
-        <td class="text-left">None</td>
-        </tr>
-        <tr>
-        <td class="text-left">jingye</td>
-        <td class="text-left">41401 - 41500</td>
-        <td class="text-left">None</td>
-        </tr>
+          <tbody class="table-hover">
+          <tr>
+          <td class="text-left">xin</td>
+          <td class="text-left">41001 - 41100</td>
+          <td class="text-left">None</td>
+          </tr>
+          <tr>
+          <td class="text-left">bian</td>
+          <td class="text-left">41101 - 41200</td>
+          <td class="text-left">None</td>
+          </tr>
+          <tr>
+          <td class="text-left">lengqy</td>
+          <td class="text-left">41201 - 41300</td>
+          <td class="text-left">None</td>
+          </tr>
+          <tr>
+          <td class="text-left">xih</td>
+          <td class="text-left">41301 - 41400</td>
+          <td class="text-left">None</td>
+          </tr>
+          <tr>
+          <td class="text-left">jingye</td>
+          <td class="text-left">41401 - 41500</td>
+          <td class="text-left">None</td>
+          </tr>
 
-        <tr>
-        <td class="text-left">derek</td>
-        <td class="text-left">41501 - 41600</td>
-        <td class="text-left">41501 - 41600</td>
-        </tr>
+          <tr>
+          <td class="text-left">derek</td>
+          <td class="text-left">41501 - 41600</td>
+          <td class="text-left">41501 - 41600</td>
+          </tr>
 
-        <tr>
-        <td class="text-left">tangyx</td>
-        <td class="text-left">41601 - 41700</td>
-        <td class="text-left">None</td>
-        </tr>
+          <tr>
+          <td class="text-left">tangyx</td>
+          <td class="text-left">41601 - 41700</td>
+          <td class="text-left">None</td>
+          </tr>
 
-        <tr>
-        <td class="text-left">xiaoxuan</td>
-        <td class="text-left">41701 - 41800</td>
-        <td class="text-left">None</td>
-        </tr>
+          <tr>
+          <td class="text-left">xiaoxuan</td>
+          <td class="text-left">41701 - 41800</td>
+          <td class="text-left">None</td>
+          </tr>
 
-        <tr>
-        <td class="text-left">wss</td>
-        <td class="text-left">41801 - 41900</td>
-        <td class="text-left">None</td>
-        </tr>
+          <tr>
+          <td class="text-left">wss</td>
+          <td class="text-left">41801 - 41900</td>
+          <td class="text-left">None</td>
+          </tr>
 
-        <tr>
-        <td class="text-left">taou</td>
-        <td class="text-left">41901 - 42000</td>
-        <td class="text-left">None</td>
-        </tr>
-        </tbody>
-      </table>
-
+          <tr>
+          <td class="text-left">taou</td>
+          <td class="text-left">41901 - 42000</td>
+          <td class="text-left">None</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
       
     </div>
   </div>
@@ -98,17 +99,21 @@ export default {
 </script>
 
 <style scoped>
-/** Table Styles **/
+/* Beginning for the table styles */
+.table-container {
+  overflow-x: auto;
+  margin: 12px 24px 12px 24px;
+  padding: 0;
+}
+
 .table-fill {
   font-family: 'monaco';
   background: white;
   border-radius: 3px;
   border-collapse: collapse;
-  height: 320px;
-  margin: 0 auto 20px auto;
   max-width: 600px;
-  padding: 5px;
-  width: 100%;
+  margin: 4px;
+  width: auto;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
  
@@ -212,5 +217,5 @@ td.text-center {
 td.text-right {
   text-align: right;
 }
-/** Table Styles **/
+/* Ending for the table styles */
 </style>
