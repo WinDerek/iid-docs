@@ -73,65 +73,6 @@
 
       <nav id="mobileMenu" :class="{ active: toggleButtonActive }">
         <ul>
-          <!-- <li>
-            <router-link
-              to="/home"
-              class="mobile-menu-link-label"
-              :class="{ selected: selectedIndex === 0 }"
-              v-on:click.native="onMobileMenuLinkClicked(0)">
-              <div class="mobile-menu-link-text-container">
-                <div class="mobile-menu-link-text">Home</div>
-              </div>
-            </router-link>
-          </li>
-
-          <li>
-            <router-link
-              to="/home"
-              class="mobile-menu-link-label"
-              :class="{ selected: selectedIndex === 1 }"
-              v-on:click.native="onMobileMenuLinkClicked(1)">
-              <div class="mobile-menu-link-text-container">
-                <div class="mobile-menu-link-text">Accounts</div>
-              </div>
-            </router-link>
-          </li>
-
-          <li>
-            <router-link
-              to="/home"
-              class="mobile-menu-link-label"
-              :class="{ selected: selectedIndex === 2 }"
-              v-on:click.native="onMobileMenuLinkClicked(2)">
-              <div class="mobile-menu-link-text-container">
-                <div class="mobile-menu-link-text">Tutorial</div>
-              </div>
-            </router-link>
-          </li>
-
-          <li>
-            <router-link
-              to="/home"
-              class="mobile-menu-link-label"
-              :class="{ selected: selectedIndex === 3 }"
-              v-on:click.native="onMobileMenuLinkClicked(3)">
-              <div class="mobile-menu-link-text-container">
-                <div class="mobile-menu-link-text">Conferences</div>
-              </div>
-            </router-link>
-          </li>
-
-          <li>
-            <router-link
-              to="/home"
-              class="mobile-menu-link-label"
-              :class="{ selected: selectedIndex === 4 }"
-              v-on:click.native="onMobileMenuLinkClicked(4)">
-              <div class="mobile-menu-link-text-container">
-                <div class="mobile-menu-link-text">Birthdays</div>
-              </div>
-            </router-link>
-          </li> -->
           <li>
             <router-link
               to="/home"
@@ -144,7 +85,7 @@
 
           <li>
             <router-link
-              to="/home"
+              to="/accounts"
               class="mobile-menu-link-label"
               :class="{ selected: selectedIndex === 1 }"
               v-on:click.native="onMobileMenuLinkClicked(1)">
@@ -154,7 +95,7 @@
 
           <li>
             <router-link
-              to="/home"
+              to="/tutorial"
               class="mobile-menu-link-label"
               :class="{ selected: selectedIndex === 2 }"
               v-on:click.native="onMobileMenuLinkClicked(2)">
@@ -164,7 +105,7 @@
 
           <li>
             <router-link
-              to="/home"
+              to="/conferences"
               class="mobile-menu-link-label"
               :class="{ selected: selectedIndex === 3 }"
               v-on:click.native="onMobileMenuLinkClicked(3)">
@@ -174,7 +115,7 @@
 
           <li>
             <router-link
-              to="/home"
+              to="/birthdays"
               class="mobile-menu-link-label"
               :class="{ selected: selectedIndex === 4 }"
               v-on:click.native="onMobileMenuLinkClicked(4)">
