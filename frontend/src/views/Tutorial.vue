@@ -49,10 +49,9 @@ code {
   margin: 12px 24px 24px 24px;
 
   display: block;
-  white-space: nowrap;
-  /* max-width: 100%; */
+  white-space: nowrap; /* Single line */
   width: auto;
-  overflow-x: scroll;
+  overflow-x: auto; /* Only show scrollbars if necessary */
 }
 
 code::before, code.normal::before {
