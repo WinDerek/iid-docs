@@ -46,7 +46,7 @@ code {
   padding: 10px 20px;
   border-radius: 3px;
   font-size: 14px;
-  margin: 0 12px;
+  margin: 12px 24px 24px 24px;
 }
 
 code::before, code.normal::before {

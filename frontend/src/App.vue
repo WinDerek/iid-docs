@@ -68,9 +68,10 @@ export default {
 .content_container {
   width: 100%;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-start; */
+  display: block;
 }
 
 @media only screen and (min-width: 800px) {
