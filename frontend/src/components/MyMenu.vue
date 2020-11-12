@@ -331,7 +331,7 @@ export default {
   align-items: center;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .github-link-container {
     display: flex;
   }

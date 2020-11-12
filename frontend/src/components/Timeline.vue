@@ -244,7 +244,7 @@ export default {
 }
 
 /* For narrow screens. */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .event__title {
     font-size: 28px;
   }

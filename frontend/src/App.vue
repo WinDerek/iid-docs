@@ -74,9 +74,9 @@ export default {
   display: block;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .content_container {
-    width: 800px;
+    width: 768px;
   }
 }
 
