@@ -1,10 +1,10 @@
 <!--
-Component for displaying the birthdays of all members.
+Component for displaying the miscellanous information.
  -->
 <template>
-  <div class="birthdays SubPage">
+  <div class="miscellaneous SubPage">
     <div class="content_container">
-      <h1 class="content__title">Birthdays</h1>
+      <h1 class="content__title">Miscellaneous</h1>
       <p>Under construction...</p>
     </div>
   </div>
@@ -12,7 +12,7 @@ Component for displaying the birthdays of all members.
 
 <script>
 export default {
-  name: 'Birthdays',
+  name: 'Miscellaneous',
   props: {
   },
   data: function () {

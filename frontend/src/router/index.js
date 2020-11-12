@@ -4,7 +4,7 @@ import Home from '../views/Home.vue';
 import Accounts from '../views/Accounts.vue';
 import Tutorial from '../views/Tutorial.vue';
 import Conferences from '../views/Conferences.vue';
-import Birthdays from '../views/Birthdays.vue';
+import Miscellaneous from '../views/Miscellaneous.vue';
 
 Vue.use(VueRouter);
 
@@ -35,9 +35,9 @@ const routes = [
     component: Conferences
   },
   {
-    path: '/birthdays',
-    name: 'Birthdays',
-    component: Birthdays
+    path: '/miscellaneous',
+    name: 'Miscellaneous',
+    component: Miscellaneous
   },
 ];
 

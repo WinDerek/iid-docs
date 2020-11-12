@@ -46,12 +46,12 @@
       </div>
     </router-link>
     <router-link
-      to="/birthdays"
+      to="/miscellaneous"
       class="menu-item-block left black link-label"
       :class="{ selected: selectedIndex === 4 }"
       v-on:click.native="onLinkClicked(4)">
       <div class="link-text-container">
-        <div class="link-text">Birthdays</div>
+        <div class="link-text">Miscellaneous</div>
       </div>
     </router-link>
 
@@ -119,11 +119,11 @@
 
           <li>
             <router-link
-              to="/birthdays"
+              to="/miscellaneous"
               class="mobile-menu-link-label"
               :class="{ selected: selectedIndex === 4 }"
               v-on:click.native="onMobileMenuLinkClicked(4)">
-              Birthdays
+              Miscellaneous
             </router-link>
           </li>
         </ul>
