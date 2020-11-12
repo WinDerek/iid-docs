@@ -69,9 +69,18 @@ export default {
     this.eventArray.push({
       timeMillis: Date.now(),
       timeString: "2020.6.6",
-      title: "NIPS 2020",
+      title: "NeurIPS 2020",
       note: "NeurIPS conference 2020. Ended.",
       side: "left",
+      ended: true
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "2020.8.15",
+      title: "INFOCOM 2020",
+      note: "INFOCOM conference 2020. Ended.",
+      side: "right",
       ended: true
     });
     
@@ -123,7 +132,7 @@ export default {
     this.eventArray.push({
       timeMillis: Date.now(),
       timeString: "TBD",
-      title: "NIPS 2021",
+      title: "NeurIPS 2021",
       note: "NeurIPS conference 2021.",
       side: "left",
       ended: false
