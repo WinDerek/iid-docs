@@ -15,7 +15,10 @@ The documentation website for the IID laboratory.
 
 ## UI design
 
-Some CSS styles of this website are inspired by [Google AI](https://ai.google/).
+Some CSS styles of this website are inspired by the following websites:
+- Desktop menu: [Google AI](https://ai.google/)
+- Mobile hamburger menu button: [DeepMind Blog](https://deepmind.com/blog)
+- Mobile menu: [Spotify](https://www.spotify.com/us/)
 
 ## Logo design
 
