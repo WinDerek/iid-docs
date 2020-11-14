@@ -29,9 +29,10 @@ The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using
 ## 3. TODO
 
 - [ ] Add the login basics (how to ssh with port)
-- [ ] Add installation guide of Anaconda
-- [ ] Add tutorial of `nohup` and `tmux`
+- [ ] Add the tutorial for conda
+- [ ] Add the tutorial for `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
+- [ ] Adds the tutorial for Git and GitHub
 - [x] Makes the website responsive to narrow screens like mobile screens
 - [ ] Fixes the timeline central line pixel perfect problem
 - [x] Redesign the UI
@@ -39,3 +40,7 @@ The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using
 - [ ] Make table scroll horizontally on narrow screens
 - [ ] Dark mode support
 - [ ] Consider static generated sites or server side rendering for this website
+- [ ] Makes the TimeLine component a tiny NPM package
+- [ ] Support time auto-check end-or-not in TimeLine
+- [ ] Support auto scroll to first open event in TimeLine
+- [ ] Remove the hash tag in url (history mode for Vue)
