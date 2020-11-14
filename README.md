@@ -38,3 +38,4 @@ The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using
 - [ ] Adds the acceptance dates for conferences
 - [ ] Make table scroll horizontally on narrow screens
 - [ ] Dark mode support
+- [ ] Consider static generated sites or server side rendering for this website
