@@ -46,7 +46,7 @@ export default {
       timeMillis: Date.now(),
       timeString: "2020.1.13",
       title: "ICDCS 2020",
-      note: "ICDCS conference 2020. Ended.",
+      note: "ICDCS conference 2020.",
       side: "right",
       ended: true
     });
@@ -55,7 +55,7 @@ export default {
       timeMillis: Date.now(),
       timeString: "2020.2.6",
       title: "ICML 2020",
-      note: "ICML conference 2020. Ended.",
+      note: "ICML conference 2020.",
       side: "left",
       ended: true
     });
@@ -64,7 +64,7 @@ export default {
       timeMillis: Date.now(),
       timeString: "2020.3.25",
       title: "MobiCom 2020",
-      note: "MobiCom conference 2020. CCF A. Ended.",
+      note: "MobiCom conference 2020. CCF A.",
       side: "right",
       ended: true
     });
@@ -73,7 +73,7 @@ export default {
       timeMillis: Date.now(),
       timeString: "2020.5.29",
       title: "GLOBECOM 2020",
-      note: "GLOBECOM conference 2020. Ended.",
+      note: "GLOBECOM conference 2020.",
       side: "right",
       ended: true
     });
@@ -82,7 +82,7 @@ export default {
       timeMillis: Date.now(),
       timeString: "2020.6.6",
       title: "NeurIPS 2020",
-      note: "NeurIPS conference 2020. Ended.",
+      note: "NeurIPS conference 2020.",
       side: "left",
       ended: true
     });
@@ -91,7 +91,7 @@ export default {
       timeMillis: Date.now(),
       timeString: "2020.8.15",
       title: "INFOCOM 2020",
-      note: "INFOCOM conference 2020. CCF A. Ended.",
+      note: "INFOCOM conference 2020. CCF A.",
       side: "right",
       ended: true
     });
@@ -100,7 +100,7 @@ export default {
       timeMillis: Date.now(),
       timeString: "2020.9.9",
       title: "AAAI 2021",
-      note: "AAAI conference 2021. Ended.",
+      note: "AAAI conference 2021.",
       side: "left",
       ended: true
     });
@@ -109,7 +109,7 @@ export default {
       timeMillis: Date.now(),
       timeString: "2020.10.31",
       title: "ICC 2021",
-      note: "ICC conference 2021. Ended.",
+      note: "ICC conference 2021.",
       side: "right",
       ended: true
     });
@@ -120,7 +120,7 @@ export default {
       title: "MobiHoc 2021",
       note: "MobiHoc conference 2021. CCF B.",
       side: "right",
-      ended: true
+      ended: false
     });
 
 
