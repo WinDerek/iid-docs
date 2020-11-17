@@ -10,6 +10,8 @@
       <p class="footer__text">Crafted with ❤ by <a href="https://github.com/derekdick" target="_blank">Derek</a> in Shanghai, China.</p>
 
       <p class="footer__text"> Copyright © 2020 All rights reserved.</p>
+
+      <img src="https://visitor-badge.glitch.me/badge?page_id=iid-docs" alt="Visitors Number" class="visitor__number" />
     </div>
   </div>
 </template>
@@ -45,7 +47,10 @@ export default {
 }
 
 .content__container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
   width: 100%;
   margin: auto;
   padding: 40px;
@@ -59,7 +64,7 @@ export default {
   text-decoration: none;
   font-style: normal;
   width: max-content;
-  margin: 12px auto;
+  margin: 8px;
   user-select: none;
 }
 
@@ -87,7 +92,7 @@ export default {
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
-  margin: 20px;
+  margin: 8px;
   color: #3c4043;
   text-align: center;
 }
@@ -95,5 +100,9 @@ export default {
 .my-footer a {
   color: #2c82c9ff;
   text-decoration: none;
+}
+
+.my-footer .visitor__number {
+  margin: 8px;
 }
 </style>
