@@ -101,7 +101,7 @@ export default {
 
 .content__subtitle {
   font-family: "OpenSans";
-  font-size: 28px;
+  font-size: 32px;
   text-align: start;
   color: #3c4043;
   font-weight: 400;
@@ -139,6 +139,29 @@ export default {
 
 .content__code__container {
   margin: 12px 24px 24px 24px;
+}
+
+.content__note {
+  background: #eeeeee;
+  padding: 4px 8px;
+  margin: 12px 24px 24px 24px;
+  border-radius: 3px;
+  border: solid 1px #999999;
+}
+
+.content__note::before {
+  content: "Note:";
+  font-family: "Roboto";
+  color: #202124;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px;
+  display: block;
+}
+
+.content__note > p {
+  margin: 8px;
+  line-height: 1.2;
 }
 
 #app {

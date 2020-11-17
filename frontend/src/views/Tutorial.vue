@@ -24,13 +24,15 @@ Component for the tutorial.
 $ bash ./Miniconda3-latest-Linux-x86_64.sh</code></pre>
       </div>
 
-      <p>
-        References: <a href="https://docs.conda.io/en/latest/index.html" target="_blank">https://docs.conda.io/en/latest/index.html</a>
-      </p>
+      <div class="content__note">
+        <p>
+          References: <a href="https://docs.conda.io/en/latest/index.html" target="_blank">https://docs.conda.io/en/latest/index.html</a>
+        </p>
 
-      <p>
-        As the official link is not reachable or too slow, here I replace <a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">the original link</a> with the Tsinghua mirror.
-      </p>
+        <p>
+          As the official link is not reachable or too slow, here I replace <a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">the original link</a> with the Tsinghua mirror.
+        </p>
+      </div>
       
       <!-- Jupyter Lab -->
       <h2 class="content__subtitle">Jupyter Lab</h2>
