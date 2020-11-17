@@ -156,6 +156,7 @@ export default {
 
 .content_container a {
   color: #2c82c9ff;
+  text-decoration: none;
 }
 
 .content__code__container {

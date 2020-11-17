@@ -7,7 +7,7 @@
         <span class="logo__text">IID Docs</span>
       </a>
 
-      <p class="footer__text">Crafted with ❤ by Derek in Shanghai, China.</p>
+      <p class="footer__text">Crafted with ❤ by <a href="https://github.com/derekdick" target="_blank">Derek</a> in Shanghai, China.</p>
 
       <p class="footer__text"> Copyright © 2020 All rights reserved.</p>
     </div>
@@ -90,5 +90,10 @@ export default {
   margin: 20px;
   color: #3c4043;
   text-align: center;
+}
+
+.my-footer a {
+  color: #2c82c9ff;
+  text-decoration: none;
 }
 </style>
