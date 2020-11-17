@@ -64,7 +64,7 @@ export default {
       timeMillis: Date.now(),
       timeString: "2020.3.25",
       title: "MobiCom 2020",
-      note: "MobiCom conference 2020. Ended.",
+      note: "MobiCom conference 2020. CCF A. Ended.",
       side: "right",
       ended: true
     });
@@ -91,7 +91,7 @@ export default {
       timeMillis: Date.now(),
       timeString: "2020.8.15",
       title: "INFOCOM 2020",
-      note: "INFOCOM conference 2020. Ended.",
+      note: "INFOCOM conference 2020. CCF A. Ended.",
       side: "right",
       ended: true
     });
@@ -113,6 +113,16 @@ export default {
       side: "right",
       ended: true
     });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "2020.12.19",
+      title: "MobiHoc 2021",
+      note: "MobiHoc conference 2021. CCF B.",
+      side: "right",
+      ended: true
+    });
+
 
     this.eventArray.push({
       timeMillis: Date.now(),
