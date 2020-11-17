@@ -1,0 +1,94 @@
+<template>
+  <div class="my-footer">
+    <div class="content__container">
+      <!-- The logo -->
+      <a href="https://derekdick.github.io/iid-docs/" target="_blank" class="logo">
+        <img src="../assets/images/iid2019_logo.svg" style="width: 32px; margin: 8px;" />
+        <span class="logo__text">IID Docs</span>
+      </a>
+
+      <p class="footer__text">Crafted with ❤ by Derek in Shanghai, China.</p>
+
+      <p class="footer__text"> Copyright © 2020 All rights reserved.</p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "MyFooter",
+  model: {
+  },
+  props: {
+  },
+  data: function() {
+    return {
+    }
+  },
+  methods: {
+  }
+};
+</script>
+
+<style scoped>
+.my-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 0;
+  background: #f5f5f5;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+}
+
+.content__container {
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+  width: max-content;
+  margin: 12px auto;
+  user-select: none;
+}
+
+.logo__text {
+  font-size: 22px;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 0px;
+  user-select: none;
+  letter-spacing: -0.25px;
+  color: #2c82c9ff;
+}
+
+@media only screen and (min-width: 1000px) {
+  .content__container {
+    width: 1000px;
+  }
+}
+
+.footer__text {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 20px;
+  color: #3c4043;
+  text-align: center;
+}
+</style>

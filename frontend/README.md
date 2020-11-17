@@ -37,6 +37,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - JavaScript: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - CSS: [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
 
+## Sticker footer
+
+[Reference](https://matthewjamestaylor.com/bottom-footer)
+
 ## Dependencies
 
 ### Prism.js

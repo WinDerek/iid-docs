@@ -5,11 +5,16 @@
     <transition name="fade" mode="out-in">
       <router-view />
     </transition>
+
+    <hr class="footer__delimiter">
+
+    <my-footer></my-footer>
   </div>
 </template>
 
 <script>
 import MyMenu from '@/components/MyMenu.vue';
+import MyFooter from '@/components/MyFooter.vue';
 
 export default {
   name: 'App',
@@ -20,7 +25,7 @@ export default {
     titleTemplate: "%s | IID Docs"
   },
   components: {
-    MyMenu
+    MyMenu, MyFooter
   },
   data: function () {
     return {
@@ -69,6 +74,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-bottom: 500px; /* 300px (the height of the footer) + 200px (the distance between content and the footer) */
 }
 
 .content_container {
@@ -86,7 +93,21 @@ export default {
   }
 }
 
-.content_container *::selection {
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  position: relative;
+}
+
+#app *::selection {
   background: #89c4f466;
 }
 
@@ -164,18 +185,6 @@ export default {
   line-height: 1.2;
 }
 
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.06s;
@@ -186,5 +195,14 @@ export default {
 .fade-enter,
 .fade-leave-active {
   opacity: 0
+}
+
+.footer__delimiter {
+  width: 100%;
+  height: 0.4px;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 </style>
