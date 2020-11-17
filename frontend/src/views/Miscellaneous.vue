@@ -20,6 +20,9 @@ Component for displaying the miscellanous information.
 <script>
 export default {
   name: 'Miscellaneous',
+  metaInfo: {
+    title: "Miscellaneous"
+  },
   props: {
   },
   data: function () {

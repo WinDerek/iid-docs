@@ -44,3 +44,5 @@ The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using
 - [ ] Support time auto-check end-or-not in TimeLine
 - [ ] Support auto scroll to first open event in TimeLine
 - [ ] Remove the hash tag in url (history mode for Vue)
+- [ ] Replace prismjs with my own tiny library for shell sessions, or open issue and send pull request on prismjs github for making the heading $ or # not selectable
+- [ ] 0.0.0.0 in prism shell session not highlighted correctly, fix this

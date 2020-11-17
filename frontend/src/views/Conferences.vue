@@ -28,6 +28,9 @@ import Timeline from '@/components/Timeline.vue';
 
 export default {
   name: 'Conferences',
+  metaInfo: {
+    title: "Conferences"
+  },
   components: {
     Timeline
   },

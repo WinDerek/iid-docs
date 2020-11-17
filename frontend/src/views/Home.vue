@@ -6,7 +6,7 @@ Component for the home page.
     <div class="content_container">
       <h1 class="content__title">Home</h1>
 
-      <img class="content__image" src="../assets/images/home.jpg" />
+      <img class="content__header__image" src="../assets/images/home.jpg" />
 
       <p>
         The original purpose of this website was to demonstrate useful instructions for the members of the IID laboratory to conduct simulations on our Linux servers.
@@ -25,6 +25,9 @@ Component for the home page.
 <script>
 export default {
   name: 'Home',
+  metaInfo: {
+    title: "Home"
+  },
   props: {
   },
   data: function () {

@@ -13,6 +13,12 @@ import MyMenu from '@/components/MyMenu.vue';
 
 export default {
   name: 'App',
+  metaInfo: {
+    meta: [
+      { charset: 'utf-8' }
+    ],
+    titleTemplate: "%s | IID Docs"
+  },
   components: {
     MyMenu
   },
@@ -80,7 +86,7 @@ export default {
   }
 }
 
-.content_container > *::selection {
+.content_container *::selection {
   background: #89c4f466;
 }
 
@@ -99,10 +105,10 @@ export default {
   text-align: start;
   color: #3c4043;
   font-weight: 400;
-  margin: 12px 24px 24px 24px;
+  margin: 32px 24px 24px 24px;
 }
 
-.content_container > p {
+.content_container p {
   font-family: "Roboto";
   color: #202124;
   line-height: 1.7;
@@ -115,9 +121,24 @@ export default {
   margin: 12px 24px 24px 24px;
 }
 
-.content__image {
+.content__header__image {
   width: 100%;
-  margin: 12px 0 24px 0;
+  display: block;
+  margin: 12px auto 24px auto;
+}
+
+.content__image {
+  display: block;
+  width: 80%;
+  margin: 8px auto 16px auto;
+}
+
+.content_container a {
+  color: #2c82c9ff;
+}
+
+.content__code__container {
+  margin: 12px 24px 24px 24px;
 }
 
 #app {

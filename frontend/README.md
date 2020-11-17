@@ -36,3 +36,17 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 - JavaScript: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - CSS: [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
+
+## Dependencies
+
+### Prism.js
+
+```shell
+$ npm install prismjs --save
+```
+
+### `vue-meta`
+
+```shell
+$ npm install vue-meta --save
+```
