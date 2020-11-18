@@ -88,7 +88,7 @@ Component for displaying the information of all the accounts on our servers.
 
 <script>
 export default {
-  name: 'Accounts',
+  name: 'accounts',
   metaInfo: {
     title: "Accounts"
   },

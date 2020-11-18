@@ -25,7 +25,7 @@ Each event in this component happens exactly at some time point. This component 
 
 <script>
 export default {
-  name: "Timeline",
+  name: "timeline",
   model: {},
   props: {
     /**

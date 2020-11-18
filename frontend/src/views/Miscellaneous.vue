@@ -19,7 +19,7 @@ Component for displaying the miscellanous information.
 
 <script>
 export default {
-  name: 'Miscellaneous',
+  name: 'miscellaneous',
   metaInfo: {
     title: "Miscellaneous"
   },

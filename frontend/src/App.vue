@@ -17,7 +17,7 @@ import MyMenu from '@/components/MyMenu.vue';
 import MyFooter from '@/components/MyFooter.vue';
 
 export default {
-  name: 'App',
+  name: 'app',
   metaInfo: {
     meta: [
       { charset: 'utf-8' }
@@ -75,7 +75,7 @@ export default {
   flex-direction: column;
   align-items: center;
 
-  padding-bottom: 500px; /* 300px (the height of the footer) + 200px (the distance between content and the footer) */
+  padding-bottom: 400px; /* 260px (the height of the footer) + 140px (the distance between content and the footer) */
 }
 
 .content_container {
@@ -205,5 +205,9 @@ export default {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.content_container > * {
+  margin: 12px 24px 24px 24px;
 }
 </style>

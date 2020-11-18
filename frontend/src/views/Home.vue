@@ -24,7 +24,7 @@ Component for the home page.
 
 <script>
 export default {
-  name: 'Home',
+  name: 'home',
   metaInfo: {
     title: "Home"
   },

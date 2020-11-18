@@ -134,7 +134,7 @@
 
 <script>
 export default {
-  name: "MyMenu",
+  name: "my-menu",
   model: {
     prop: 'selectedIndex',
     event: 'selectedIndexChange'

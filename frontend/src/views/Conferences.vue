@@ -4,17 +4,21 @@ Component for interested conferences.
 2. AAAI
 3. NIPS
 4. ICC
-5. VTC
+5. MobiCom
 6. Sigmetrics
 7. INCOFOM
 8. GLOBECOM
 9. ICDCS
+10. MobiHoc
  -->
 <template>
   <div class="conferences SubPage">
     <div class="content_container">
       <h1 class="content__title">Conferences</h1>
       <p>The timeline for some conferences.</p>
+
+      <!-- The button to scroll to the earliest deadline -->
+      <my-button @click="handleClick">Go to the Earliest Deadline</my-button>
 
       <div id="timelineContainer">
         <timeline :eventArray="eventArray"></timeline>
@@ -25,23 +29,24 @@ Component for interested conferences.
 
 <script>
 import Timeline from '@/components/Timeline.vue';
+import MyButton from '@/components/MyButton.vue';
 
 export default {
-  name: 'Conferences',
+  name: 'conferences',
   metaInfo: {
     title: "Conferences"
   },
   components: {
-    Timeline
+    Timeline, MyButton
   },
   props: {
   },
-  data: function () {
+  data: function() {
     return {
       eventArray: []
     }
   },
-  created () {
+  created() {
     this.eventArray.push({
       timeMillis: Date.now(),
       timeString: "2020.1.13",
@@ -196,7 +201,18 @@ export default {
       ended: false
     });
   },
-  methods: {}
+  methods: {
+    handleClick: function(event) {
+      // Scroll to the last ended event
+      
+      // Get the last ended event element
+      let endedEventElementArray = document.querySelectorAll(".event.ended");
+      let lastEndedEventElement = endedEventElementArray[endedEventElementArray.length - 1];
+
+      // Scroll to that element
+      lastEndedEventElement.scrollIntoView(true, { behavior: "smooth", block: "end", inline: "nearest" });
+    }
+  }
 }
 </script>
 

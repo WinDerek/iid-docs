@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "MyFooter",
+  name: "my-footer",
   model: {
   },
   props: {
@@ -43,7 +43,7 @@ export default {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 300px;
+  height: 260px;
 }
 
 .content__container {

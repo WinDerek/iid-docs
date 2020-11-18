@@ -61,7 +61,7 @@ import 'prismjs/components/prism-shell-session';
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 
 export default {
-  name: 'Tutorial',
+  name: 'tutorial',
   metaInfo: {
     title: "Tutorial"
   },
