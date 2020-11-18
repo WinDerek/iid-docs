@@ -207,7 +207,7 @@ export default {
   border: none;
 }
 
-.content_container > * {
+.content_container > button {
   margin: 12px 24px 24px 24px;
 }
 </style>
