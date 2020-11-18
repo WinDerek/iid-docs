@@ -218,6 +218,6 @@ export default {
 
 <style scoped>
 #timelineContainer {
-  padding: 12px 12px 24px 12px;
+  padding: 12px 24px 24px 24px;
 }
 </style>
