@@ -313,7 +313,7 @@ export default {
   left: 0;
 
   transform: translateY(100%);
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.16s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-label:hover::after {
@@ -405,9 +405,9 @@ export default {
   background-color: #333333;
   display: block;
   margin: 6px 0;
-  -webkit-transition: all 0.35s;
-  -o-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.16s;
+  -o-transition: all 0.16s;
+  transition: all 0.16s;
 }
 
 .toggle-button:hover{
