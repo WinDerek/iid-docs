@@ -54,3 +54,9 @@ $ npm install prismjs --save
 ```shell
 $ npm install vue-meta --save
 ```
+
+### anima.js
+
+```shell
+$ npm install animejs --save
+```

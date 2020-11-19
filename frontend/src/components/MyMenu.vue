@@ -66,16 +66,16 @@
       </a>
     </div>
 
-    <!-- The menu toggle button -->
+    <!-- The menu toggle button and the navigation menu -->
     <div class="menu-item-flex toggle-button-container">
-      <button class="toggle-button" :class="{ 'active': toggleButtonActive }" v-on:click="onToggleButtonClicked()">
+      <button class="toggle-button" :class="{ 'active': toggleButtonActive }" @click="onToggleButtonClicked()">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </button>
 
       <!-- The navigation menu for narrow (mobile) screens -->
-      <nav id="mobileMenu" :class="{ active: toggleButtonActive }">
+      <nav id="mobileMenu">
         <ul>
           <li>
             <router-link
@@ -133,6 +133,8 @@
 </template>
 
 <script>
+import anime from 'animejs/lib/anime.es.js';
+
 export default {
   name: "my-menu",
   model: {
@@ -156,11 +158,50 @@ export default {
       this.$emit('selectedIndexChange', index);
     },
     onToggleButtonClicked() {
+      // Invert the value
       this.toggleButtonActive = !this.toggleButtonActive;
+
+      // If the toggle button is active
+      if (this.toggleButtonActive) {
+        // Show the mobile menu
+        this.showMobileMenu();
+      }
+      // Else, the toggle button is inactive
+      else {
+        // Dismiss the mobile menu
+        this.dismissMobileMenu();
+        // this.showMobileMenu();
+      }
     },
     onMobileMenuLinkClicked(index) {
       this.$emit('selectedIndexChange', index);
       this.onToggleButtonClicked();
+    },
+    showMobileMenu() {
+      anime({
+        targets: '#mobileMenu',
+        translateX: '0%',
+        // translateX: [100, 0],
+        opacity: '1.0',
+        easing: 'cubicBezier(0.040, 0.855, 0.060, 0.985)',
+        delay: 0,
+        duration: 160,
+        loop: false,
+        direction: 'normal'
+      });
+    },
+    dismissMobileMenu() {
+      anime({
+        targets: '#mobileMenu',
+        translateX: '100%',
+        // translateX: [100, 0],
+        opacity: '0.0',
+        easing: 'cubicBezier(0.925, 0.290, 0.915, 0.785)',
+        delay: 0,
+        duration: 80,
+        loop: false,
+        direction: 'normal'
+      });
     }
   }
 };
@@ -404,8 +445,7 @@ export default {
 
 /* Beginning of the styles for the mobile menu */
 #mobileMenu {
-  display: none;
-  visibility: hidden;
+  display: block;
 
   position: absolute;
   top: 0;
@@ -416,16 +456,9 @@ export default {
   z-index: 9999;
 
   background: #2c82c9ff;
-  opacity: 0;
+  opacity: 0.0;
 
-  transition: all 0.35s ease-in-out;
-}
-
-#mobileMenu.active {
-  display: flex;
-  visibility: visible;
-
-  opacity: 1.0;
+  transform: translateX(100%);
 }
 
 #mobileMenu > ul {
@@ -452,7 +485,7 @@ export default {
   font-size: 20px;
   font-family: "OpenSans";
   letter-spacing: 0.25px;
-  font-weight: 600;
+  font-weight: 300;
   user-select: none;
   color: #eeeeee;
 }
