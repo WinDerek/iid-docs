@@ -36,14 +36,14 @@ export default {
 .my-footer {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin: 0;
   background: #f5f5f5;
 
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 280px;
+  height: 260px;
 }
 
 .content__container {
@@ -53,7 +53,7 @@ export default {
   align-items: center; 
   width: 100%;
   margin: auto;
-  padding: 40px;
+  padding: 0;
 }
 
 .logo {
