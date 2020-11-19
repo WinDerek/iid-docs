@@ -75,7 +75,7 @@
       </button>
 
       <!-- The navigation menu for narrow (mobile) screens -->
-      <nav id="mobileMenu">
+      <nav id="mobileMenu" :class='{ active: toggleButtonActive }'>
         <ul>
           <li>
             <router-link
@@ -153,6 +153,8 @@ export default {
       toggleButtonActive: false
     }
   },
+  created() {
+  },
   methods: {
     onLinkClicked(index) {
       this.$emit('selectedIndexChange', index);
@@ -160,7 +162,7 @@ export default {
     onToggleButtonClicked() {
       // Invert the value
       this.toggleButtonActive = !this.toggleButtonActive;
-
+      
       // If the toggle button is active
       if (this.toggleButtonActive) {
         // Show the mobile menu
@@ -170,7 +172,6 @@ export default {
       else {
         // Dismiss the mobile menu
         this.dismissMobileMenu();
-        // this.showMobileMenu();
       }
     },
     onMobileMenuLinkClicked(index) {
@@ -178,6 +179,9 @@ export default {
       this.onToggleButtonClicked();
     },
     showMobileMenu() {
+      let mobileMenuElement = document.getElementById("mobileMenu");
+      mobileMenuElement.style.display = "block";
+
       anime({
         targets: '#mobileMenu',
         translateX: '0%',
@@ -200,7 +204,11 @@ export default {
         delay: 0,
         duration: 80,
         loop: false,
-        direction: 'normal'
+        direction: 'normal',
+        complete: function(anim) {
+          let mobileMenuElement = document.getElementById("mobileMenu");
+          mobileMenuElement.style.display = "none";
+        }
       });
     }
   }
@@ -445,7 +453,7 @@ export default {
 
 /* Beginning of the styles for the mobile menu */
 #mobileMenu {
-  display: block;
+  display: none;
 
   position: absolute;
   top: 0;

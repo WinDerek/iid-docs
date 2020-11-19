@@ -43,7 +43,7 @@ export default {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 260px;
+  height: 280px;
 }
 
 .content__container {
@@ -54,7 +54,6 @@ export default {
   width: 100%;
   margin: auto;
   padding: 40px;
-  position: relative;
 }
 
 .logo {
