@@ -36,7 +36,7 @@ export default {
     // Print the greeting message to the console
     console.log("%c让我来康康是哪个小盆友在偷窥我的代码？", "color: #ffffff; font-size: x-large; background: #cf000f;");
     console.log("%c看都看了，给个 star 呗！", "color: #ffffff; font-size: x-large; background: #cf000f;");
-    console.log("%chttps://github.com/DerekDick/iid-docs", "color: red; font-size: x-large");
+    console.log("%chttps://github.com/neo-derek/iid-docs", "color: red; font-size: x-large");
   },
   methods: {
     onMenuSelectedIndexChange(index) {

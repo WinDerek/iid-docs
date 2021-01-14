@@ -8,11 +8,11 @@ Component for displaying the miscellanous information.
 
       <h2 class="content__subtitle">Birthdays</h2>
 
-      <p>Under construction...</p>
+      <p>NotImplementedError</p>
 
       <h2 class="content__subtitle">Lab Cleaning Schudule</h2>
 
-      <p>Under construction...</p>
+      <p>NotImplementedError</p>
     </div>
   </div>
 </template>
