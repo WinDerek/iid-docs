@@ -29,6 +29,7 @@ The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using
 ## 3. TODO
 
 - [ ] Add the login basics (how to ssh with port)
+- [ ] Add Dell Precision Workstations image in home page
 - [ ] Add the tutorial for conda
 - [ ] Add the tutorial for `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
@@ -47,3 +48,7 @@ The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using
 - [ ] Replace prismjs with my own tiny library for shell sessions, or open issue and send pull request on prismjs github for making the heading $ or # not selectable
 - [ ] 0.0.0.0 in prism shell session not highlighted correctly, fix this
 - [ ] Fix the bug about disappearning mobile menu links on Samsung mobile browser.
+
+## 4. License
+
+**All rights reserved.**
