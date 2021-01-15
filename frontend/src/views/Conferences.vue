@@ -15,7 +15,9 @@ Component for interested conferences.
   <div class="conferences SubPage">
     <div class="content_container">
       <h1 class="content__title">Conferences</h1>
-      <p>The timeline for some conferences.</p>
+      <p>Following is a timeline for some conferences.</p>
+
+      <p>There is another website for AI conferences deadlines: <a href="http://aideadlin.es/" target="_blank">aideadlin.es</a></p>
 
       <!-- The button to scroll to the earliest deadline -->
       <my-button @click="handleClick">Go to the Earliest Deadline</my-button>
@@ -125,7 +127,7 @@ export default {
       title: "MobiHoc 2021",
       note: "MobiHoc conference 2021. CCF B.",
       side: "right",
-      ended: false
+      ended: true
     });
 
 
@@ -135,7 +137,7 @@ export default {
       title: "ICDCS 2021",
       note: "ICDCS conference 2021.",
       side: "right",
-      ended: false
+      ended: true
     });
 
     this.eventArray.push({
