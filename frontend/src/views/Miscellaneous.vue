@@ -39,7 +39,11 @@ export default {
   data: function () {
     return {}
   },
-  methods: {}
+  mounted () {
+    Prism.highlightAll();
+  },
+  methods: {
+  }
 }
 </script>
 
