@@ -26,11 +26,11 @@ The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using
 
 <img src="./logo/iid2019_logo.png" width="200" alt="IID Docs Logo" />
 
-## 3. TODO
+## TODO
 
 - [ ] Add the login basics (how to ssh with port)
 - [ ] Add Dell Precision Workstations image in home page
-- [ ] Add the tutorial for conda
+- [x] Add the tutorial for conda
 - [ ] Add the tutorial for `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
 - [ ] Adds the tutorial for Git and GitHub
@@ -47,8 +47,7 @@ The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using
 - [ ] Remove the hash tag in url (history mode for Vue)
 - [ ] Replace prismjs with my own tiny library for shell sessions, or open issue and send pull request on prismjs github for making the heading $ or # not selectable
 - [ ] 0.0.0.0 in prism shell session not highlighted correctly, fix this
-- [ ] Fix the bug about disappearning mobile menu links on Samsung mobile browser.
 
-## 4. License
+## License
 
 **All rights reserved.**
