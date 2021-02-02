@@ -146,7 +146,7 @@ export default {
       title: "IJCAI 2021",
       note: "IJCAI conference 2021.",
       side: "left",
-      ended: false
+      ended: true
     });
 
     this.eventArray.push({
