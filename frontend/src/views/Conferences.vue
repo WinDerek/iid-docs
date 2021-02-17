@@ -155,7 +155,7 @@ export default {
       title: "ICML 2021",
       note: "ICML conference 2021.",
       side: "left",
-      ended: false
+      ended: true
     });
 
     this.eventArray.push({

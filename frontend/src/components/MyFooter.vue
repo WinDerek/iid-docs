@@ -7,7 +7,7 @@
         <span class="logo__text">IID Docs</span>
       </a>
 
-      <p class="footer__text">Crafted with ❤ by <a href="https://github.com/derekdick" target="_blank">Derek</a> in Shanghai, China.</p>
+      <p class="footer__text">Crafted with ❤ by <a href="https://github.com/neo-derek" target="_blank">Derek</a> in Shanghai, China.</p>
 
       <p class="footer__text"> Copyright © 2020 All rights reserved.</p>
 
