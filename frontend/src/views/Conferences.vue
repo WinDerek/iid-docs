@@ -164,12 +164,12 @@ export default {
       title: "IWQoS 2021",
       note: "IWQoS conference 2021.",
       side: "right",
-      ended: false
+      ended: true
     });
 
     this.eventArray.push({
       timeMillis: Date.now(),
-      timeString: "TBD",
+      timeString: "2021.5.27",
       title: "NeurIPS 2021",
       note: "NeurIPS conference 2021.",
       side: "left",
