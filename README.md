@@ -1,6 +1,6 @@
 # IID Docs
 
-[https://neo-derek.github.io/iid-docs/](https://neo-derek.github.io/iid-docs/)
+[https://winderek.github.io/iid-docs/](https://winderek.github.io/iid-docs/)
 
 The documentation website for the IID laboratory.
 
@@ -22,7 +22,7 @@ Some CSS styles of this website are inspired by the following websites:
 
 ## Logo design
 
-The logo of IID Docs was designed by [Derek](https://github.com/DerekDick) using [inkscape](https://inkscape.org/).
+The logo of IID Docs was designed by [Derek](https://github.com/WinDerek) using [inkscape](https://inkscape.org/).
 
 <img src="./logo/iid2019_logo.png" width="200" alt="IID Docs Logo" />
 
