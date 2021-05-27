@@ -5,6 +5,7 @@ import Accounts from '../views/Accounts.vue';
 import Tutorial from '../views/Tutorial.vue';
 import Conferences from '../views/Conferences.vue';
 import Miscellaneous from '../views/Miscellaneous.vue';
+import MyRelax from '../views/MyRelax.vue';
 
 Vue.use(VueRouter);
 
@@ -39,10 +40,15 @@ const routes = [
     name: 'Miscellaneous',
     component: Miscellaneous
   },
+  {
+    path: '/relax',
+    name: 'MyRelax',
+    component: MyRelax
+  }
 ];
 
 const router = new VueRouter({
-  mode: "hash",
+  mode: "history",
   routes,
 });
 

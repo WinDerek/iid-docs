@@ -54,6 +54,15 @@
         <div class="link-text">Miscellaneous</div>
       </div>
     </router-link>
+    <router-link
+      to="/relax"
+      class="menu-item-block left black link-label"
+      :class="{ selected: selectedIndex === 5 }"
+      v-on:click.native="onLinkClicked(5)">
+      <div class="link-text-container">
+        <div class="link-text">Relax</div>
+      </div>
+    </router-link>
 
     <div class="menu-item-flex github-link-container">
       <a href="https://github.com/DerekDick/iid-docs" target="_blank">
@@ -124,6 +133,16 @@
               :class="{ selected: selectedIndex === 4 }"
               v-on:click.native="onMobileMenuLinkClicked(4)">
               Miscellaneous
+            </router-link>
+          </li>
+
+          <li>
+            <router-link
+              to="/relax"
+              class="mobile-menu-link-label"
+              :class="{ selected: selectedIndex === 5 }"
+              v-on:click.native="onMobileMenuLinkClicked(5)">
+              Relax
             </router-link>
           </li>
         </ul>
