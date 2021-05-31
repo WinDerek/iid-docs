@@ -6,6 +6,12 @@ Component for displaying some websites for fun.
     <div class="content_container">
       <h1 class="content__title">学习网站集合</h1>
 
+      <h2 class="content__subtitle">多智能体在线博弈平台（红色警戒 2）</h2>
+
+      <p>
+        <a href="https://game.chronodivide.com/" target="_blank">https://game.chronodivide.com/</a>
+      </p>
+
       <h2 class="content__subtitle">俄罗斯方块</h2>
 
       <p>
