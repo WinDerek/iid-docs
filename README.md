@@ -29,7 +29,6 @@ The logo of IID Docs was designed by [Derek](https://github.com/WinDerek) using 
 ## TODO
 
 - [ ] Add the login basics (how to ssh with port)
-- [ ] Add Dell Precision Workstations image in home page
 - [x] Add the tutorial for conda
 - [ ] Add the tutorial for `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
