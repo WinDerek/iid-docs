@@ -2,12 +2,12 @@
   <div class="my-footer">
     <div class="content__container">
       <!-- The logo -->
-      <a href="https://derekdick.github.io/iid-docs/" target="_blank" class="logo">
+      <a href="https://winderek.github.io/iid-docs/" target="_blank" class="logo">
         <img src="../assets/images/iid2019_logo.svg" style="width: 32px; margin: 8px;" />
         <span class="logo__text">IID Docs</span>
       </a>
 
-      <p class="footer__text">Crafted with ❤ by <a href="https://github.com/neo-derek" target="_blank">Derek</a> in Shanghai, China.</p>
+      <p class="footer__text">Crafted with ❤ by <a href="https://github.com/WinDerek" target="_blank">Derek</a> in Shanghai, China.</p>
 
       <p class="footer__text"> Copyright © 2020 - 2021 All rights reserved.</p>
 
