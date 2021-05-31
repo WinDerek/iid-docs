@@ -15,7 +15,7 @@ git add -A
 git commit -m 'deploy'
 
 # Push the gh-pages branch
-git push -f git@github.com:derekdick/iid-docs.git master:gh-pages
+git push -f git@github.com:winderek/iid-docs.git master:gh-pages
 
 # Go back to the previous directory
 cd -
