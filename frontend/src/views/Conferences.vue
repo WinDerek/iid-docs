@@ -173,7 +173,7 @@ export default {
       title: "NeurIPS 2021",
       note: "NeurIPS conference 2021.",
       side: "left",
-      ended: false
+      ended: true
     });
 
     this.eventArray.push({
@@ -188,6 +188,15 @@ export default {
     this.eventArray.push({
       timeMillis: Date.now(),
       timeString: "TBD",
+      title: "INFOCOM 2022",
+      note: "INFOCOM conference 2022.",
+      side: "right",
+      ended: false
+    });
+
+    this.eventArray.push({
+      timeMillis: Date.now(),
+      timeString: "2021.10.11",
       title: "ICC 2022",
       note: "ICC conference 2022.",
       side: "right",
