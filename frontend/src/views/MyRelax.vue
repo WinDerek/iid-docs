@@ -18,6 +18,18 @@ Component for displaying some websites for fun.
         <a href="https://ac.yunyoujun.cn/" target="_blank">https://ac.yunyoujun.cn/</a>
       </p>
 
+      <h2 class="content__subtitle">小电视</h2>
+
+      <p>
+        <a href="http://tvdang.ddns.net:8000/" target="_blank">http://tvdang.ddns.net:8000/</a>
+      </p>
+
+      <h2 class="content__subtitle">小霸王学习机</h2>
+
+      <p>
+        <a href="http://fc.my71.top/" target="_blank">http://fc.my71.top/</a>
+      </p>
+
       <h2 class="content__subtitle">3D 赛车</h2>
 
       <p>
