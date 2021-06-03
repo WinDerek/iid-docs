@@ -1,7 +1,7 @@
 <template>
   <div class="my-menu">
     <div class="menu-item-flex left logo">
-      <img src="../assets/images/iid2019_logo.svg" style="width: 32px; margin: 20px 0px 20px 20px;" />
+      <img src="../assets/images/iid2019_logo.svg" style="width: 32px; margin: 14px 0px 14px 14px;" />
     </div>
 
     <div class="menu-item-flex left organization-label">
@@ -264,12 +264,12 @@ export default {
 }
 
 .logo {
-  margin: 4px 8px;
+  margin: 2px 8px;
   user-select: none;
 }
 
 .organization-label {
-  margin: 4px 8px;
+  margin: 2px 8px;
   margin-left: 0;
 }
 
@@ -356,7 +356,7 @@ export default {
   top: 0;
   right: 0;
   bottom: 0;
-  padding: 20px;
+  padding: 14px;
 
   display: none;
 }
@@ -391,7 +391,7 @@ export default {
   top: 0;
   right: 0;
   bottom: 0;
-  padding: 20px;
+  padding: 14px;
 
   display: flex;
   flex-direction: row;
@@ -427,9 +427,9 @@ export default {
 }
 
 .toggle-button .line {
-  width: 28px;
-  height: 3px;
-  background-color: #333333;
+  width: 24px;
+  height: 2px;
+  background-color: #2c82c9ff;
   display: block;
   margin: 6px 0;
   -webkit-transition: all 0.16s;
@@ -452,19 +452,19 @@ export default {
 }
 
 .toggle-button.active .line:nth-child(1) {
-  -webkit-transform: translateY(9px) rotate(45deg);
-  -ms-transform: translateY(9px) rotate(45deg);
-  -o-transform: translateY(9px) rotate(45deg);
-  transform: translateY(9px) rotate(-45deg);
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(-45deg);
 
   background-color: #eeeeee;
 }
 
 .toggle-button.active .line:nth-child(3) {
-  -webkit-transform: translateY(-9px) rotate(-45deg);
-  -ms-transform: translateY(-9px) rotate(-45deg);
-  -o-transform: translateY(-9px) rotate(-45deg);
-  transform: translateY(-9px) rotate(45deg);
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(45deg);
 
   background-color: #eeeeee;
 }
