@@ -9,7 +9,7 @@
 
       <p class="footer__text">Crafted with ❤ by <a href="https://github.com/WinDerek" target="_blank">Derek</a> in Shanghai, China.</p>
 
-      <p class="footer__text"> Copyright © 2020 - 2021 All rights reserved.</p>
+      <p class="footer__text"> Copyright © 2020 &ndash; 2021 All rights reserved.</p>
 
       <img src="https://visitor-badge.glitch.me/badge?page_id=iid-docs" alt="Visitors Number" class="visitor__number" />
     </div>
