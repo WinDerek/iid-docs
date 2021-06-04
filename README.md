@@ -1,8 +1,8 @@
 # IID Docs
 
-[https://winderek.github.io/iid-docs/](https://winderek.github.io/iid-docs/)
+Go to the website: [https://winderek.github.io/iid-docs/](https://winderek.github.io/iid-docs/)
 
-The documentation website for the IID laboratory.
+The _unofficial_ documentation website for the IID laboratory of SIST (School of Information Science and Technology), ShanghaiTech University.
 
 ## Features
 
@@ -24,7 +24,7 @@ Some CSS styles of this website are inspired by the following websites:
 
 The logo of IID Docs was designed by [Derek](https://github.com/WinDerek) using [inkscape](https://inkscape.org/).
 
-<img src="./logo/iid2019_logo.png" width="200" alt="IID Docs Logo" />
+<img src="./logo/iid2019_logo.svg" width="100" alt="IID Docs Logo" />
 
 ## TODO
 
