@@ -173,6 +173,42 @@ export default {
     }
   },
   created() {
+    switch (this.$route.name) {
+      case "Home": {
+        this.$emit('selectedIndexChange', 0);
+        break;
+      }
+
+      case "Accounts": {
+        this.$emit('selectedIndexChange', 1);
+        break;
+      }
+
+      case "Tutorial": {
+        this.$emit('selectedIndexChange', 2);
+        break;
+      }
+
+      case "Conferences": {
+        this.$emit('selectedIndexChange', 3);
+        break;
+      }
+
+      case "Miscellaneous": {
+        this.$emit('selectedIndexChange', 4);
+        break;
+      }
+
+      case "MyRelax": {
+        this.$emit('selectedIndexChange', 5);
+        break;
+      }
+
+      default: {
+        console.error(`Unknown route name: "${this.$route.name}".`);
+        break;
+      }
+    }
   },
   methods: {
     onLinkClicked(index) {
