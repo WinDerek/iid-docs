@@ -117,11 +117,11 @@ export default {
 
 .content__title {
   font-family: "OpenSans";
-  font-size: 44px;
+  font-size: 42px;
   text-align: center;
   color: #3c4043;
   font-weight: 400;
-  margin: 16px 0 32px 0;
+  margin: 32px 0 32px 0;
 }
 
 .content__subtitle {
