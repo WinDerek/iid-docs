@@ -174,7 +174,8 @@ export default {
   },
   created() {
     switch (this.$route.name) {
-      case "Home": {
+      case "Home":
+      case "Index": {
         this.$emit('selectedIndexChange', 0);
         break;
       }
