@@ -312,7 +312,7 @@ export default {
 }
 
 .link-label:hover {
-  color: #000000;
+  color: #2c82c9ff;
   transition: color 0.25s linear;
 }
 
@@ -348,7 +348,8 @@ export default {
 }
 
 .selected {
-  color: #000000;
+  color: #2c82c9ff;
+  font-weight: bold;
 }
 
 .github-link-container {
