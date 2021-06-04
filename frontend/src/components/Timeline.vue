@@ -73,11 +73,12 @@ export default {
   position: relative;
 }
 
+/* The center line */
 .timeline::before {
   content: "";
   width: 5px;
   height: 100%;
-  background: #aea8d3;
+  background: #bdc3c7;
   position: absolute;
   left: 50%;
   top: 0;
@@ -111,7 +112,7 @@ export default {
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid #2c82c9ff;
+  border-left: 10px solid #2c82c9;
 
   transform: translateY(-50%);
 }
@@ -120,7 +121,7 @@ export default {
   border-left: 10px solid #bdc3c7;
 }
 
-/* The central circle. */
+/* The central circle for events on the left side. */
 .event--left::after {
   content: "";
   position: absolute;
@@ -128,11 +129,15 @@ export default {
   top: 30px;
   width: 16px;
   height: 16px;
-  border: 4px solid #aea8d3;
+  border: 4px solid #82b1ff;
   border-radius: 50%;
-  background: #674172;
+  background: #2c82c9;
 
   transform: translate(50%, -50%);
+}
+.event--left.ended::after {
+  border: 4px solid #bdc3c7;
+  background: #757575;
 }
 
 .event--right::before {
@@ -144,7 +149,7 @@ export default {
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid #ee4d4d;
+  border-right: 10px solid #e53935;
 
   transform: translateY(-50%);
 }
@@ -153,7 +158,7 @@ export default {
   border-right: 10px solid #bdc3c7;
 }
 
-/* The central circle. */
+/* The central circle for events on the right side. */
 .event--right::after {
   content: "";
   position: absolute;
@@ -161,15 +166,19 @@ export default {
   top: 30px;
   width: 16px;
   height: 16px;
-  border: 4px solid #aea8d3;
+  border: 4px solid #ff8a80;
   border-radius: 50%;
-  background: #674172;
+  background: #e53935;
 
   transform: translate(-50%, -50%);
 }
+.event--right.ended::after {
+  border: 4px solid #bdc3c7;
+  background: #757575;
+}
 
 .event__header.left {
-  background: #2c82c9ff;
+  background: #2c82c9;
 }
 
 .event__header.left > *::selection {
@@ -177,7 +186,7 @@ export default {
 }
 
 .event__header.right {
-  background: #ee4d4d;
+  background: #e53935;
 }
 
 .event__header.right > *::selection {

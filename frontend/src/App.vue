@@ -159,7 +159,7 @@ export default {
 }
 
 .content_container a {
-  color: #2c82c9ff;
+  color: #2c82c9;
   text-decoration: none;
 }
 
