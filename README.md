@@ -6,7 +6,7 @@ The _unofficial_ documentation website for the IID laboratory of SIST (School of
 
 ## Features
 
-- Built from scratch, without using any templates
+- Built totally from scratch, without using any sort of templates
 - Responsive UI layout (移动端适配)
 
 ## Development
