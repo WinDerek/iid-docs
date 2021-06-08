@@ -178,7 +178,7 @@ export default {
 
     this.eventArray.push({
       timeMillis: Date.now(),
-      timeString: "TBD",
+      timeString: "2021.9.9",
       title: "AAAI 2022",
       note: "AAAI conference 2022.",
       side: "left",
