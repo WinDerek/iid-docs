@@ -22,6 +22,9 @@ Component for interested conferences.
       <!-- The button to scroll to the earliest deadline -->
       <my-button @click="handleClick">Go to the Earliest Deadline</my-button>
 
+      <!-- The button to change the visibility of the ended events -->
+      <my-button @click="onChangeEndedEventsVisibility">{{buttonTextChangeEndedEventsVisibility}}</my-button>
+
       <div id="timelineContainer">
         <timeline :eventArray="eventArray"></timeline>
       </div>
@@ -43,9 +46,19 @@ export default {
   },
   props: {
   },
+  computed: {
+    buttonTextChangeEndedEventsVisibility: function() {
+      if (this.endedEventsVisible) {
+        return "Hide Ended Events";
+      } else {
+        return "Show Ended Events";
+      }
+    }
+  },
   data: function() {
     return {
-      eventArray: []
+      eventArray: [],
+      endedEventsVisible: true
     }
   },
   created() {
@@ -55,7 +68,8 @@ export default {
       title: "ICDCS 2020",
       note: "ICDCS conference 2020.",
       side: "right",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -64,7 +78,8 @@ export default {
       title: "ICML 2020",
       note: "ICML conference 2020.",
       side: "left",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -73,7 +88,8 @@ export default {
       title: "MobiCom 2020",
       note: "MobiCom conference 2020. CCF A.",
       side: "right",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -82,7 +98,8 @@ export default {
       title: "GLOBECOM 2020",
       note: "GLOBECOM conference 2020.",
       side: "right",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -91,7 +108,8 @@ export default {
       title: "NeurIPS 2020",
       note: "NeurIPS conference 2020.",
       side: "left",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -100,7 +118,8 @@ export default {
       title: "INFOCOM 2020",
       note: "INFOCOM conference 2020. CCF A.",
       side: "right",
-      ended: true
+      ended: true,
+      visible: true
     });
     
     this.eventArray.push({
@@ -109,7 +128,8 @@ export default {
       title: "AAAI 2021",
       note: "AAAI conference 2021.",
       side: "left",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -118,7 +138,8 @@ export default {
       title: "ICC 2021",
       note: "ICC conference 2021.",
       side: "right",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -127,7 +148,8 @@ export default {
       title: "MobiHoc 2021",
       note: "MobiHoc conference 2021. CCF B.",
       side: "right",
-      ended: true
+      ended: true,
+      visible: true
     });
 
 
@@ -137,7 +159,8 @@ export default {
       title: "ICDCS 2021",
       note: "ICDCS conference 2021.",
       side: "right",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -146,7 +169,8 @@ export default {
       title: "IJCAI 2021",
       note: "IJCAI conference 2021.",
       side: "left",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -155,7 +179,8 @@ export default {
       title: "ICML 2021",
       note: "ICML conference 2021.",
       side: "left",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -164,7 +189,8 @@ export default {
       title: "IWQoS 2021",
       note: "IWQoS conference 2021.",
       side: "right",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -173,7 +199,8 @@ export default {
       title: "NeurIPS 2021",
       note: "NeurIPS conference 2021.",
       side: "left",
-      ended: true
+      ended: true,
+      visible: true
     });
 
     this.eventArray.push({
@@ -182,7 +209,8 @@ export default {
       title: "AAAI 2022",
       note: "AAAI conference 2022.",
       side: "left",
-      ended: false
+      ended: false,
+      visible: true
     });
 
     this.eventArray.push({
@@ -191,7 +219,8 @@ export default {
       title: "INFOCOM 2022",
       note: "INFOCOM conference 2022.",
       side: "right",
-      ended: false
+      ended: false,
+      visible: true
     });
 
     this.eventArray.push({
@@ -200,7 +229,8 @@ export default {
       title: "ICC 2022",
       note: "ICC conference 2022.",
       side: "right",
-      ended: false
+      ended: false,
+      visible: true
     });
 
     this.eventArray.push({
@@ -209,7 +239,8 @@ export default {
       title: "ICML 2022",
       note: "ICML conference 2022.",
       side: "left",
-      ended: false
+      ended: false,
+      visible: true
     });
   },
   methods: {
@@ -222,6 +253,27 @@ export default {
 
       // Scroll to that element
       lastEndedEventElement.scrollIntoView(true, { behavior: "smooth", block: "end", inline: "nearest" });
+    },
+    hideEndedEvents: function() {
+      this.endedEventsVisible = false;
+
+      for (let i = 0; i < this.eventArray.length; i++) {
+        this.eventArray[i].visible = !this.eventArray[i].ended;
+      }
+    },
+    showEndedEvents: function() {
+      this.endedEventsVisible = true;
+
+      for (let i = 0; i < this.eventArray.length; i++) {
+        this.eventArray[i].visible = true;
+      }
+    },
+    onChangeEndedEventsVisibility: function(event) {
+      if (this.endedEventsVisible) {
+        this.hideEndedEvents();
+      } else {
+        this.showEndedEvents();
+      }
     }
   }
 }

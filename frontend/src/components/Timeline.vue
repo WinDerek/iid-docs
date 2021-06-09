@@ -8,10 +8,10 @@ Each event in this component happens exactly at some time point. This component 
 <template>
   <div class="timeline">
     <div
-      class="event"
-      :class="{ 'event--left': event.side === 'left', 'event--right': event.side === 'right', 'ended': event.ended }"
       v-for="(event, index) in eventArray"
-      v-bind:key="index">
+      v-bind:key="index"
+      class="event"
+      :class="{ 'event--left': event.side === 'left', 'event--right': event.side === 'right', 'ended': event.ended, 'invisible': !event.visible }">
       <div class="event__header" :class="{ 'left': (event.side === 'left') && (!event.ended), 'right': (event.side === 'right') && (!event.ended), 'ended': event.ended }">
         <h3 class="event__time" :class="{ 'ended': event.ended }">{{ event.timeString === undefined ? Date.parse(event.timeMillis) : event.timeString }}</h3>
         <h2 class="event__title" :class="{ 'ended': event.ended }">{{ event.title }}</h2>
@@ -58,7 +58,16 @@ export default {
   data: function() {
     return {};
   },
-  methods: {}
+  methods: {
+    visibilityOfEvent: function(event) {
+      if (event.visible) {
+        return "visible";
+      } else {
+        console.log("hidden");
+        return "hidden";
+      }
+    }
+  }
 };
 </script>
 
@@ -91,6 +100,11 @@ export default {
   margin: 16px 0 16px 0;
   box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+.event.invisible {
+  /* visibility: hidden; */
+  display: none;
 }
 
 .event--left {
