@@ -79,7 +79,7 @@ export default {
   flex-direction: column;
   align-items: center;
 
-  padding-bottom: 400px; /* 260px (the height of the footer) + 140px (the distance between content and the footer) */
+  margin-bottom: 140px; /* 140px is the distance between content and the footer) */
 }
 
 .content_container {
@@ -204,10 +204,13 @@ export default {
 
 .footer__delimiter {
   width: 100%;
-  height: 0.4px;
+  height: 0px;
   background: #ffffff;
   margin: 0;
   padding: 0;
+
+  padding-top: 260px; /* 260px is the height of the footer */
+
   border: none;
 }
 
