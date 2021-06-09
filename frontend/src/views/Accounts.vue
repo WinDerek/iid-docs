@@ -231,5 +231,16 @@ td.text-center {
 td.text-right {
   text-align: right;
 }
+
+/* For narrow screens. */
+@media only screen and (max-width: 768px) {
+  th, tr, td {
+    font-size: 12px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+}
 /* Ending for the table styles */
 </style>

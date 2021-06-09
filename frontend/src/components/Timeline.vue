@@ -267,17 +267,17 @@ export default {
 }
 
 /* For narrow screens. */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .event__title {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   .event__time {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .event__note {
-    font-family: 18px;
+    font-size: 14px;
   }
 }
 </style>
