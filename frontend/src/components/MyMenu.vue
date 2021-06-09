@@ -539,7 +539,7 @@ export default {
   display: block;
   list-style: none;
   margin: 0;
-  padding: 8px 0;
+  padding: 0;
 }
 
 #MobileMenu > ul > li {
