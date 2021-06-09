@@ -235,7 +235,7 @@ td.text-right {
 /* For narrow screens. */
 @media only screen and (max-width: 768px) {
   th, tr, td {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 /* Ending for the table styles */

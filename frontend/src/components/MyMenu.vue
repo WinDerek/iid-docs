@@ -84,7 +84,9 @@
       </button>
 
       <!-- The navigation menu for narrow (mobile) screens -->
-      <nav id="mobileMenu" :class='{ active: toggleButtonActive }'>
+      <nav id="MobileMenu" :class='{ active: toggleButtonActive }'>
+        <div id="MobileMenu__title">IID Docs</div>
+
         <ul>
           <li>
             <router-link
@@ -235,11 +237,11 @@ export default {
       this.onToggleButtonClicked();
     },
     showMobileMenu() {
-      let mobileMenuElement = document.getElementById("mobileMenu");
+      let mobileMenuElement = document.getElementById("MobileMenu");
       mobileMenuElement.style.display = "block";
 
       anime({
-        targets: '#mobileMenu',
+        targets: '#MobileMenu',
         translateX: '0%',
         // translateX: [100, 0],
         opacity: '1.0',
@@ -252,7 +254,7 @@ export default {
     },
     dismissMobileMenu() {
       anime({
-        targets: '#mobileMenu',
+        targets: '#MobileMenu',
         translateX: '100%',
         // translateX: [100, 0],
         opacity: '0.0',
@@ -262,7 +264,7 @@ export default {
         loop: false,
         direction: 'normal',
         complete: function(anim) {
-          let mobileMenuElement = document.getElementById("mobileMenu");
+          let mobileMenuElement = document.getElementById("MobileMenu");
           mobileMenuElement.style.display = "none";
         }
       });
@@ -509,7 +511,7 @@ export default {
 /* Ending of the styles for the toggle button */
 
 /* Beginning of the styles for the mobile menu */
-#mobileMenu {
+#MobileMenu {
   display: none;
 
   position: absolute;
@@ -526,14 +528,21 @@ export default {
   transform: translateX(100%);
 }
 
-#mobileMenu > ul {
+#MobileMenu__title {
+  font-size: 28px;
+  font-family: 'OpenSans';
+  color: white;
+  margin: 14px 0 14px 32px;
+}
+
+#MobileMenu > ul {
   display: block;
   list-style: none;
   margin: 0;
-  padding: 24px 32px;
+  padding: 8px 32px;
 }
 
-#mobileMenu > ul > li {
+#MobileMenu > ul > li {
   display: block;
   margin: 0;
   padding: 0;
@@ -541,7 +550,8 @@ export default {
 
 .mobile-menu-link-label {
   text-decoration: none;
-  margin: 0 0 24px 0;
+  /* margin: 0 0 24px 0; */
+  padding: 12px 0;
 
   display: block;
 
