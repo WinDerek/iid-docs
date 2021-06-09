@@ -237,10 +237,6 @@ td.text-right {
   th, tr, td {
     font-size: 12px;
   }
-
-  td {
-    font-size: 12px;
-  }
 }
 /* Ending for the table styles */
 </style>

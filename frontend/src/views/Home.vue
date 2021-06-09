@@ -4,7 +4,7 @@ Component for the home page.
 <template>
   <div class="home SubPage">
     <div class="content_container">
-      <h1 class="content__title">Home</h1>
+      <h1 class="content__title">Welcome to IID Docs!</h1>
 
       <img class="content__header__image" src="../assets/images/home.jpg" />
 
