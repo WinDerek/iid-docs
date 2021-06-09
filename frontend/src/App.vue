@@ -217,4 +217,15 @@ export default {
 .content_container > button {
   margin: 12px 24px 24px 24px;
 }
+
+/* For narrow screens. */
+@media only screen and (max-width: 768px) {
+  .content__title {
+    font-size: 36px;
+  }
+
+  .content__subtitle {
+    font-size: 28px;
+  }
+}
 </style>
