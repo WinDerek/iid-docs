@@ -539,7 +539,7 @@ export default {
   display: block;
   list-style: none;
   margin: 0;
-  padding: 8px 32px;
+  padding: 8px 0;
 }
 
 #MobileMenu > ul > li {
@@ -548,10 +548,18 @@ export default {
   padding: 0;
 }
 
+#MobileMenu > ul > li {
+  border-bottom: 1px solid rgba(216, 216, 216, 0.6);
+}
+
+#MobileMenu > ul > li:first-child {
+  border-top: 1px solid rgba(216, 216, 216, 0.6);
+}
+
 .mobile-menu-link-label {
   text-decoration: none;
   /* margin: 0 0 24px 0; */
-  padding: 12px 0;
+  padding: 12px 32px;
 
   display: block;
 
