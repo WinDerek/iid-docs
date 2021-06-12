@@ -477,7 +477,7 @@ export default {
   transition: all 0.16s;
 }
 
-.toggle-button:hover{
+.toggle-button:hover {
   cursor: pointer;
 }
 

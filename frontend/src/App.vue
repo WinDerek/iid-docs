@@ -117,7 +117,7 @@ export default {
 
 .content__title {
   font-family: "OpenSans";
-  font-size: 42px;
+  font-size: 38px;
   text-align: center;
   color: #3c4043;
   font-weight: 400;
@@ -221,7 +221,7 @@ export default {
 /* For narrow screens. */
 @media only screen and (max-width: 768px) {
   .content__title {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .content__subtitle {
