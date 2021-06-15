@@ -246,17 +246,107 @@ export default {
     });
   },
   methods: {
+    /**
+     * Scrolls to and highlights the first not ended event.
+     */
     handleClick: function(event) {
-      // Scroll to the last ended event
-      
-      // Get the last ended event element
-      let endedEventElementArray = document.querySelectorAll(".event.ended");
-      let lastEndedEventElement = endedEventElementArray[endedEventElementArray.length - 1];
+      // Get the first not ended event element
+      let notEndedEventElementArray = document.querySelectorAll(".event:not(.ended)");
+      if (this.animationRunning || (notEndedEventElementArray.length == 0)) {
+        return;
+      }
+      let firstNotEndedEventElement = notEndedEventElementArray[0];
+
+      let viewModel = this;
+      // Smooth scroll to.
+      // Reference: https://stackoverflow.com/a/20670662
+      var EPPZScrollTo = {
+          documentVerticalScrollPosition: function() {
+              if (self.pageYOffset) return self.pageYOffset; // Firefox, Chrome, Opera, Safari.
+              if (document.documentElement && document.documentElement.scrollTop) return document.documentElement.scrollTop; // Internet Explorer 6 (standards mode).
+              if (document.body.scrollTop) return document.body.scrollTop; // Internet Explorer 6, 7 and 8.
+              return 0; // None of the above.
+          },
+
+          viewportHeight: function() {
+            return (document.compatMode === "CSS1Compat") ? document.documentElement.clientHeight : document.body.clientHeight;
+          },
+
+          documentHeight: function() {
+            return (document.height !== undefined) ? document.height : document.body.offsetHeight;
+          },
+
+          documentMaximumScrollPosition: function() {
+            return this.documentHeight() - this.viewportHeight();
+          },
+
+          elementVerticalClientPosition: function(element) {
+              var rectangle = element.getBoundingClientRect();
+              return rectangle.top;
+          },
+
+          /**
+           * Animation tick.
+           */
+          scrollVerticalTickToPosition: function(currentPosition, targetPosition) {
+              var filter = 0.2;
+              var fps = 60;
+              var difference = parseFloat(targetPosition) - parseFloat(currentPosition);
+
+              // Snap, then stop if arrived.
+              var arrived = (Math.abs(difference) <= 0.5);
+              // let arrived = difference <= 0.0;
+              if (arrived) {
+                  // Apply target.
+                  window.scrollTo(0.0, targetPosition);
+
+                  // Animate the first not ended event
+                  viewModel.startFirstNotEndedEventAnimation();
+
+                  return;
+              }
+
+              // Filtered position.
+              currentPosition = (parseFloat(currentPosition) * (1.0 - filter)) + (parseFloat(targetPosition) * filter);
+
+              // Apply target.
+              window.scrollTo(0.0, Math.round(currentPosition));
+
+              // Schedule next tick.
+              setTimeout(function() {
+                EPPZScrollTo.scrollVerticalTickToPosition(currentPosition, targetPosition);
+              }, 1000 / fps);
+          },
+
+          /**
+           * For public use.
+           *
+           * @param element The element to scroll to.
+           * @param padding Top padding to apply above element.
+           */
+          scrollVerticalToElement: function(element, padding) {
+              if (null == element) {
+                  console.warn("element is null");
+                  return;
+              }
+
+              var targetPosition = this.documentVerticalScrollPosition() + this.elementVerticalClientPosition(element) - padding;
+              var currentPosition = this.documentVerticalScrollPosition();
+
+              // Clamp.
+              // var maximumScrollPosition = this.documentMaximumScrollPosition();
+              // if (targetPosition > maximumScrollPosition) targetPosition = maximumScrollPosition;
+
+              // Start animation.
+              this.scrollVerticalTickToPosition(currentPosition, targetPosition);
+          }
+      };
 
       // Scroll to that element
-      lastEndedEventElement.scrollIntoView(true, { behavior: "smooth", block: "end", inline: "nearest" });
-
-      // Animate the first not ended event
+      // lastEndedEventElement.scrollIntoView(true, { behavior: "smooth", block: "end", inline: "nearest" }); // scrollIntoView is not really smooth
+      EPPZScrollTo.scrollVerticalToElement(firstNotEndedEventElement, 20);
+    },
+    startFirstNotEndedEventAnimation: function() {
       let notEndedEventElementArray = document.querySelectorAll(".event:not(.ended)");
       if (!this.animationRunning && (notEndedEventElementArray.length > 0)) {
         let firstNotEndedEventElement = notEndedEventElementArray[0];
