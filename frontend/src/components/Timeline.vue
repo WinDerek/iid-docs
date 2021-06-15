@@ -270,14 +270,17 @@ export default {
 @media only screen and (max-width: 768px) {
   .event__title {
     font-size: 18px;
+    padding: 0 8px 4px 8px;
   }
 
   .event__time {
     font-size: 14px;
+    padding: 4px 8px 2px 8px;
   }
 
   .event__note {
     font-size: 14px;
+    padding: 4px 8px 4px 8px;
   }
 }
 </style>
