@@ -260,20 +260,35 @@ export default {
       let notEndedEventElementArray = document.querySelectorAll(".event:not(.ended)");
       if (!this.animationRunning && (notEndedEventElementArray.length > 0)) {
         let firstNotEndedEventElement = notEndedEventElementArray[0];
+        let firstNotEndedEventHeaderElement = firstNotEndedEventElement.children[0];
+        let firstNotEndedEventBodyElement = firstNotEndedEventElement.children[1];
         let viewModel = this;
         viewModel.animationRunning = true;
-        anime({
-          targets: [ firstNotEndedEventElement ],
-          width: {
-            value: '*=1.05',
-            duration: 200,
-            easing: 'easeInOutQuad'
-          },
-          direction: 'alternate',
+        let animationTimeline = anime.timeline({
+          easing: 'easeInOutQuad',
+          duration: 600,
+          direction: "alternate",
           complete: function(anim) {
             viewModel.animationRunning = false;
           }
         });
+        animationTimeline
+        .add({
+          targets: [ firstNotEndedEventElement ],
+          borderRadius: "20px"
+        }, 0)
+        .add({
+          targets: [ firstNotEndedEventHeaderElement ],
+          borderRadius: "20px 20px 0 0"
+        }, 0)
+        .add({
+          targets: [ firstNotEndedEventBodyElement ],
+          borderRadius: "0 0 20px 20px"
+        }, 0)
+        .add({
+          targets: [ firstNotEndedEventElement ],
+          opacity: 0.1
+        }, 0);
       }
     },
     hideEndedEvents: function() {
