@@ -266,8 +266,9 @@ export default {
         viewModel.animationRunning = true;
         let animationTimeline = anime.timeline({
           easing: 'easeInOutQuad',
-          duration: 600,
+          duration: 500,
           direction: "alternate",
+          loop: 4,
           complete: function(anim) {
             viewModel.animationRunning = false;
           }
