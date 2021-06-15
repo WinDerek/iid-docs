@@ -35,6 +35,7 @@ Component for interested conferences.
 <script>
 import Timeline from '@/components/Timeline.vue';
 import MyButton from '@/components/MyButton.vue';
+import anime from 'animejs';
 
 export default {
   name: 'conferences',
@@ -58,7 +59,8 @@ export default {
   data: function() {
     return {
       eventArray: [],
-      endedEventsVisible: true
+      endedEventsVisible: true,
+      animationRunning: false
     }
   },
   created() {
@@ -253,6 +255,26 @@ export default {
 
       // Scroll to that element
       lastEndedEventElement.scrollIntoView(true, { behavior: "smooth", block: "end", inline: "nearest" });
+
+      // Animate the first not ended event
+      let notEndedEventElementArray = document.querySelectorAll(".event:not(.ended)");
+      if (!this.animationRunning && (notEndedEventElementArray.length > 0)) {
+        let firstNotEndedEventElement = notEndedEventElementArray[0];
+        let viewModel = this;
+        viewModel.animationRunning = true;
+        anime({
+          targets: [ firstNotEndedEventElement ],
+          width: {
+            value: '*=1.05',
+            duration: 200,
+            easing: 'easeInOutQuad'
+          },
+          direction: 'alternate',
+          complete: function(anim) {
+            viewModel.animationRunning = false;
+          }
+        });
+      }
     },
     hideEndedEvents: function() {
       this.endedEventsVisible = false;
