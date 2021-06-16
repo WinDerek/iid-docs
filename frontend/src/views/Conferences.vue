@@ -217,7 +217,7 @@ export default {
 
     this.eventArray.push({
       timeMillis: Date.now(),
-      timeString: "2021.8.24",
+      timeString: "2021.7.24",
       title: "INFOCOM 2022",
       note: "INFOCOM conference 2022.",
       side: "right",
