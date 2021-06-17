@@ -34,9 +34,9 @@ export default {
   },
   created () {
     // Print the greeting message to the console
-    console.log("%c让我来康康是哪个小盆友在偷窥我的代码？", "color: #ffffff; font-size: x-large; background: #cf000f;");
-    console.log("%c看都看了，给个 star 呗！", "color: #ffffff; font-size: x-large; background: #cf000f;");
-    console.log("%chttps://github.com/WinDerek/iid-docs", "color: red; font-size: x-large");
+    console.log("%cThis website is crafted by Jianfeng Hou from scratch, without using any existing code or template.", "color: #ffffff; font-size: 16px; background: #2c82c9; padding: 10px 16px;");
+    console.log("%c本站未使用任何现成代码或模板，欢迎 star ⭐", "color: #ffffff; font-size: 16px; background: #2c82c9; padding: 10px 16px;");
+    console.log("%chttps://github.com/WinDerek/iid-docs", "background: #dadfe1; font-size: 16px; padding: 10px 16px;");
   },
   methods: {
     onMenuSelectedIndexChange(index) {
@@ -215,7 +215,7 @@ export default {
 }
 
 .content_container > button {
-  margin: 12px 24px 24px 24px;
+  margin: 12px;
 }
 
 /* For narrow screens. */
