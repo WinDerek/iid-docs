@@ -406,13 +406,12 @@ export default {
           }, 60);
         } else {
           viewModel.hideAnimationRunning = false;
+          viewModel.endedEventsVisible = false;
 
           return;
         }
       }
       hideEvent(0);
-
-      this.endedEventsVisible = false;
 
       // for (let i = 0; i < this.eventArray.length; i++) {
       //   this.eventArray[i].visible = !this.eventArray[i].ended;
@@ -440,13 +439,12 @@ export default {
           }, 60);
         } else {
           viewModel.showAnimationRunning = false;
+          viewModel.endedEventsVisible = true;
 
           return;
         }
       }
       showEvent(endedEventIndexArray.length - 1);
-
-      this.endedEventsVisible = true;
 
       // for (let i = 0; i < this.eventArray.length; i++) {
       //   this.eventArray[i].visible = true;
