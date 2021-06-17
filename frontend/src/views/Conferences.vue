@@ -60,7 +60,9 @@ export default {
     return {
       eventArray: [],
       endedEventsVisible: true,
-      animationRunning: false
+      animationRunning: false,
+      hideAnimationRunning: false,
+      showAnimationRunning: false
     }
   },
   created() {
@@ -383,23 +385,77 @@ export default {
       }
     },
     hideEndedEvents: function() {
+      this.hideAnimationRunning = true;
+
+      let endedEventIndexArray = [];
+      for (let i = 0; i < this.eventArray.length; i++) {
+        if (this.eventArray[i].ended) {
+          endedEventIndexArray.push(i);
+        }
+      }
+
+      // Hide the ended events one by one in the order of [ 0, 1, ..., n-1 ], where n is the number of ended events.
+      let viewModel = this;
+      function hideEvent(i) {
+        let index = endedEventIndexArray[i];
+        viewModel.eventArray[index].visible = false;
+
+        if ((i + 1) < endedEventIndexArray.length) {
+          setTimeout(function() {
+            hideEvent(i + 1);
+          }, 60);
+        } else {
+          viewModel.hideAnimationRunning = false;
+
+          return;
+        }
+      }
+      hideEvent(0);
+
       this.endedEventsVisible = false;
 
-      for (let i = 0; i < this.eventArray.length; i++) {
-        this.eventArray[i].visible = !this.eventArray[i].ended;
-      }
+      // for (let i = 0; i < this.eventArray.length; i++) {
+      //   this.eventArray[i].visible = !this.eventArray[i].ended;
+      // }
     },
     showEndedEvents: function() {
+      this.showAnimationRunning = true;
+
+      let endedEventIndexArray = [];
+      for (let i = 0; i < this.eventArray.length; i++) {
+        if (this.eventArray[i].ended) {
+          endedEventIndexArray.push(i);
+        }
+      }
+
+      // Show the ended events one by one in the order of [ n-1, n-2, ..., 0], where n is the number of ended events.
+      let viewModel = this;
+      function showEvent(i) {
+        let index = endedEventIndexArray[i];
+        viewModel.eventArray[index].visible = true;
+
+        if ((i - 1) >= 0) {
+          setTimeout(function() {
+            showEvent(i - 1);
+          }, 60);
+        } else {
+          viewModel.showAnimationRunning = false;
+
+          return;
+        }
+      }
+      showEvent(endedEventIndexArray.length - 1);
+
       this.endedEventsVisible = true;
 
-      for (let i = 0; i < this.eventArray.length; i++) {
-        this.eventArray[i].visible = true;
-      }
+      // for (let i = 0; i < this.eventArray.length; i++) {
+      //   this.eventArray[i].visible = true;
+      // }
     },
     onChangeEndedEventsVisibility: function(event) {
-      if (this.endedEventsVisible) {
+      if (this.endedEventsVisible && !this.hideAnimationRunning) {
         this.hideEndedEvents();
-      } else {
+      } else if (!this.endedEventsVisible && !this.showAnimationRunning) {
         this.showEndedEvents();
       }
     }
