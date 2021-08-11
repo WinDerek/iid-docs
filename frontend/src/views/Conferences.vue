@@ -156,7 +156,6 @@ export default {
       visible: true
     });
 
-
     this.eventArray.push({
       timeMillis: Date.now(),
       timeString: "2021.1.13",
@@ -209,20 +208,20 @@ export default {
 
     this.eventArray.push({
       timeMillis: Date.now(),
-      timeString: "2021.9.9",
-      title: "AAAI 2022",
-      note: "AAAI conference 2022.",
-      side: "left",
+      timeString: "2021.7.24",
+      title: "INFOCOM 2022",
+      note: "INFOCOM conference 2022.",
+      side: "right",
       ended: false,
       visible: true
     });
 
     this.eventArray.push({
       timeMillis: Date.now(),
-      timeString: "2021.7.24",
-      title: "INFOCOM 2022",
-      note: "INFOCOM conference 2022.",
-      side: "right",
+      timeString: "2021.9.9",
+      title: "AAAI 2022",
+      note: "AAAI conference 2022.",
+      side: "left",
       ended: false,
       visible: true
     });
