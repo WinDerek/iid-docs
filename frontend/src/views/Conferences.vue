@@ -212,7 +212,7 @@ export default {
       title: "INFOCOM 2022",
       note: "INFOCOM conference 2022.",
       side: "right",
-      ended: false,
+      ended: true,
       visible: true
     });
 

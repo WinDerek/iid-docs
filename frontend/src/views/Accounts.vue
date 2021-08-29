@@ -80,7 +80,7 @@ Component for displaying the information of all the accounts on our servers.
           <td class="text-left">wss</td>
           <td class="text-left">None</td>
           <td class="text-left">41801 - 41900</td>
-          <td class="text-left">None</td>
+          <td class="text-left">41801 - 41900</td>
           </tr>
 
           <tr>
