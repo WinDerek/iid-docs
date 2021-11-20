@@ -17,7 +17,6 @@ Component for displaying the information of all the accounts on our servers.
           <thead>
           <tr>
           <th class="text-left">User</th>
-          <th class="text-left">iid-server-0 (10.19.126.141)</th>
           <th class="text-left">iid-server-1 (10.19.129.132)</th>
           <th class="text-left">iid-server-2 (10.19.129.133)</th>
           </tr>
@@ -26,31 +25,26 @@ Component for displaying the information of all the accounts on our servers.
           <tbody class="table-hover">
           <tr>
           <td class="text-left">xin</td>
-          <td class="text-left">None</td>
           <td class="text-left">41001 - 41100</td>
           <td class="text-left">None</td>
           </tr>
           <tr>
           <td class="text-left">bian</td>
           <td class="text-left">41101 - 41200</td>
-          <td class="text-left">41101 - 41200</td>
           <td class="text-left">None</td>
           </tr>
           <tr>
           <td class="text-left">lengqy</td>
-          <td class="text-left">None</td>
           <td class="text-left">41201 - 41300</td>
           <td class="text-left">None</td>
           </tr>
           <tr>
           <td class="text-left">xih</td>
-          <td class="text-left">None</td>
           <td class="text-left">41301 - 41400</td>
           <td class="text-left">None</td>
           </tr>
           <tr>
           <td class="text-left">jingye</td>
-          <td class="text-left">None</td>
           <td class="text-left">41401 - 41500</td>
           <td class="text-left">None</td>
           </tr>
@@ -59,33 +53,28 @@ Component for displaying the information of all the accounts on our servers.
           <td class="text-left">derek</td>
           <td class="text-left">41501 - 41600</td>
           <td class="text-left">41501 - 41600</td>
-          <td class="text-left">41501 - 41600</td>
           </tr>
 
           <tr>
           <td class="text-left">tangyx</td>
-          <td class="text-left">None</td>
           <td class="text-left">41601 - 41700</td>
           <td class="text-left">None</td>
           </tr>
 
           <tr>
           <td class="text-left">xiaoxuan</td>
-          <td class="text-left">None</td>
           <td class="text-left">41701 - 41800</td>
           <td class="text-left">None</td>
           </tr>
 
           <tr>
           <td class="text-left">wss</td>
-          <td class="text-left">None</td>
           <td class="text-left">41801 - 41900</td>
           <td class="text-left">41801 - 41900</td>
           </tr>
 
           <tr>
           <td class="text-left">taou</td>
-          <td class="text-left">None</td>
           <td class="text-left">41901 - 42000</td>
           <td class="text-left">None</td>
           </tr>
