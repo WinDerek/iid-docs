@@ -1,6 +1,6 @@
 # IID Docs
 
-Go to the website: [https://winderek.github.io/iid-docs/](https://winderek.github.io/iid-docs/)
+The website: [https://winderek.github.io/iid-docs/](https://winderek.github.io/iid-docs/)
 
 The _unofficial_ documentation website for the IID laboratory of SIST (School of Information Science and Technology), ShanghaiTech University.
 
@@ -28,10 +28,8 @@ The logo of IID Docs was designed by [Derek](https://github.com/WinDerek) using 
 
 ## TODO
 
-- [x] Add the login basics
 - [ ] Add the tutorial for `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
-- [x] Adds the tutorial for Git and GitHub
 - [ ] Adds the acceptance dates for conferences
 - [ ] Dark mode support
 - [ ] Consider static generated sites or server side rendering for this website
@@ -40,12 +38,6 @@ The logo of IID Docs was designed by [Derek](https://github.com/WinDerek) using 
 - [ ] Remove the hash tag in url (history mode for Vue)
 - [ ] Replace prismjs with my own tiny library for shell sessions, or open issue and send pull request on prismjs github for making the heading $ or # not selectable
 - [ ] 0.0.0.0 in prism shell session not highlighted correctly, fix this
-- [x] Add the tutorial for conda
-- [x] Makes the website responsive to narrow screens like mobile screens
-- [x] Fixes the timeline central line pixel perfect problem
-- [x] Redesign the UI
-- [x] Make table scroll horizontally on narrow screens
-- [x] Support auto scroll to first open event in TimeLine
 
 ## License
 
