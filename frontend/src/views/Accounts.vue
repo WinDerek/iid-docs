@@ -6,7 +6,7 @@ Component for displaying the information of all the accounts on our servers.
     <div class="content_container">
       <h1 class="content__title">Accounts</h1>
 
-      <h2 class="content__subtitle">Port allocation</h2>
+      <h2 class="content__subtitle">Table of Accounts</h2>
 
       <p>
         The accounts on each server with the corresponding allocated ports are listed below:
@@ -121,8 +121,8 @@ export default {
 }
  
 th {
-  color:#D5DDE5;;
-  background:#1b1e24;
+  color: #D5DDE5;
+  background: #1b1e24;
   border-bottom: 4px solid #9ea7af;
   border-right: 1px solid #343a45;
   font-size: 16px;
@@ -130,16 +130,16 @@ th {
   padding: 24px;
   text-align:left;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 th:first-child {
-  border-top-left-radius:3px;
+  border-top-left-radius: 3px;
 }
 
 th:last-child {
-  border-top-right-radius:3px;
-  border-right:none;
+  border-top-right-radius: 3px;
+  border-right: none;
 }
 
 tr {
@@ -163,32 +163,32 @@ tr:first-child {
 }
 
 tr:last-child {
-  border-bottom:none;
+  border-bottom: none;
 }
 
 tr:nth-child(odd) td {
-  background:#EBEBEB;
+  background: #EBEBEB;
 }
 
 tr:nth-child(odd):hover td {
-  background:#4E5066;
+  background: #4E5066;
 }
 
 tr:last-child td:first-child {
-  border-bottom-left-radius:3px;
+  border-bottom-left-radius: 3px;
 }
 
 tr:last-child td:last-child {
-  border-bottom-right-radius:3px;
+  border-bottom-right-radius: 3px;
 }
 
 td {
-  background:#FFFFFF;
+  background: #FFFFFF;
   padding: 10px 24px;
   text-align: left;
   vertical-align: middle;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 16px;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #C1C3D1;
 }

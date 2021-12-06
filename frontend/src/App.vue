@@ -140,7 +140,7 @@ export default {
   font-size: 16px;
   font-style: normal;
   text-decoration: none;
-  font-weight: 200;
+  /* font-weight: 200; */
   word-wrap: break-word;
 
   margin: 12px 24px 24px 24px;
@@ -227,5 +227,16 @@ export default {
   .content__subtitle {
     font-size: 28px;
   }
+}
+
+code.inline-code {
+  background: rgba(175, 184, 193, 0.2);
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+  box-sizing: border-box;
+
+  color: rgb(36, 41, 47);
+  font-family: "Monaco";
+  font-size: 85%;
 }
 </style>

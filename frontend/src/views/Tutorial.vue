@@ -4,9 +4,68 @@ Component for the tutorial.
 <template>
   <div class="tutorial SubPage">
     <div class="content_container">
-      <h1 class="content__title">Tutorial</h1>
+      <h1 class="content__title">Tutorials</h1>
 
       <img class="content__header__image" src="../assets/images/tutorial.png" />
+
+      <!-- Login basics -->
+      <h2 class="content__subtitle">Login Basics</h2>
+
+      <div class="content__code__container">
+        <pre class="code"><code class="language-shell-session">$ ssh ${USERNAME}@${SERVER_IP}</code></pre>
+      </div>
+
+      <p>
+        Here <code class="inline-code">${USERNAME}</code> is the username of your account on the server, and <code class="inline-code">${SERVER_IP}</code> is the IP address of the server.
+        
+        For example, a user named <code class="inline-code">test</code> can connect to <code class="inline-code">iid-server-1</code> using the following command:
+      </p>
+
+      <div class="content__code__container">
+        <pre class="code"><code class="language-shell-session">$ ssh test@10.19.129.132</code></pre>
+      </div>
+
+      <p>
+        If your are tired of remembering the IP address and typing it each time you want to login, you can add the IP address into the file <code class="inline-code">/etc/hosts</code> of your local machine:
+      </p>
+
+      <div class="content__code__container">
+        <pre class="code">
+          <code class="language-shell-session">
+            # IID servers
+            10.19.129.132    iid-server-1
+            10.19.129.133    iid-server-2
+          </code>
+        </pre>
+      </div>
+
+      <p>
+        Then you can use the command <code class="inline-code">ssh test@iid-server-1</code> to login.
+      </p>
+
+      <p>
+        Furthermore, you can even save the trouble of password input. To achieve that, you only need to add your local SSH public key to the server's authorized list. First, on your local machine, get your SSH public key:
+      </p>
+
+      <div class="content__code__container">
+        <pre class="code"><code class="language-shell-session">$ cat ~/.ssh/id_rsa.pub</code></pre>
+      </div>
+
+      <p>
+        If the file does not exist, use <code class="inline-code">ssh-keygen</code> to generate the keys. Then copy the content of your key and paste into the authorized list file of your server:
+      </p>
+
+      <div class="content__code__container">
+        <pre class="code">
+          <code class="language-shell-session">
+            $ nano ~/.ssh/authorized_keys
+          </code>
+        </pre>
+      </div>
+
+      <p>
+        Now you can login by <code class="inline-code">ssh test@iid-server-1</code> without typing the password. Cool!
+      </p>
 
       <!-- Conda -->
       <h2 class="content__subtitle">Conda</h2>
@@ -55,7 +114,7 @@ $ bash ./Miniconda3-latest-Linux-x86_64.sh</code></pre>
       <p>
         <a href="https://git-scm.com/" target="_blank">Git</a> is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
         
-        Keep in mind that Git is different from third-party platforms providing remote Git repository services like GitHub, GitLab, BitBucket and so on. Below is a short Git tutorial.
+        Keep in mind that Git is different from third-party platforms providing remote Git repository services like GitHub, GitLab, BitBucket and so on. Below is a cheatsheet for a typical workflow for using Git and GitHub.
       </p>
 
       <img class="content__image" src="../assets/images/git_tutorial.png" style="width: 400px;" alt="A short Git tutorial." />

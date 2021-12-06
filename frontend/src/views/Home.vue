@@ -15,7 +15,7 @@ Component for the home page.
       </p>
       
       <p>
-        There are two servers (Dell Precision Workstation) of our laboratory residing in Room 511, 1C Building of SIST, ShanghaiTech.
+        There are two servers (Dell Precision Workstation) of our laboratory residing in Room 305, 2nd Building of SIST, ShanghaiTech University.
         The two servers have been running stably and providing services for the laboratory members to conduct simulations since they were deployed in May, 2020.
       </p>
     </div>

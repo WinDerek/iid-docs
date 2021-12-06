@@ -28,7 +28,6 @@ The logo of IID Docs was designed by [Derek](https://github.com/WinDerek) using 
 
 ## TODO
 
-- [ ] Re-write the mobile menu
 - [ ] Add the login basics
 - [ ] Add the tutorial for `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
