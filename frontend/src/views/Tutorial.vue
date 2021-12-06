@@ -140,6 +140,10 @@ Component for the tutorial.
         <li>VS Code Remote SSH</li>
 
         <a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank">https://code.visualstudio.com/docs/remote/ssh</a>
+
+        <li>Sublime Text 3</li>
+
+        <a href="https://gist.github.com/connorjan/8b9d9fa8f252cf145ef3e2ad9b708f46" target="_target">https://gist.github.com/connorjan/8b9d9fa8f252cf145ef3e2ad9b708f46</a>
       </ol>
     </div>
   </div>
