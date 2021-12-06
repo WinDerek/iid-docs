@@ -8,7 +8,7 @@ Component for the tutorial.
 
       <img class="content__header__image" src="../assets/images/tutorial.png" />
 
-      <!-- Login basics -->
+      <!-- Login Basics -->
       <h2 class="content__subtitle">Login Basics</h2>
 
       <div class="content__code__container">
@@ -79,8 +79,12 @@ Component for the tutorial.
       </p>
 
       <div class="content__code__container">
-        <pre class="code"><code class="language-shell-session">$ curl -OJ https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
-$ bash ./Miniconda3-latest-Linux-x86_64.sh</code></pre>
+        <pre class="code">
+          <code class="language-shell-session">
+            $ curl -OJ https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+            $ bash ./Miniconda3-latest-Linux-x86_64.sh
+          </code>
+        </pre>
       </div>
 
       <div class="content__note">
@@ -118,6 +122,25 @@ $ bash ./Miniconda3-latest-Linux-x86_64.sh</code></pre>
       </p>
 
       <img class="content__image" src="../assets/images/git_tutorial.png" style="width: 400px;" alt="A short Git tutorial." />
+
+      <!-- Remote Editors -->
+      <h2 class="content__subtitle">Remote Editors</h2>
+
+      <p>
+        Editing files on servers can sometimes be annoying. It is bothering to edit files locally, then transfer them to the server, and do these operations repeatedly.
+
+        Actually, there exist several solutions for editing files on a server directly.
+      </p>
+
+      <ol>
+        <li>code-server</li>
+
+        VS Code in your browser: <a href="https://github.com/cdr/code-server" target="_blank">https://github.com/cdr/code-server</a>
+
+        <li>VS Code Remote SSH</li>
+
+        <a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank">https://code.visualstudio.com/docs/remote/ssh</a>
+      </ol>
     </div>
   </div>
 </template>

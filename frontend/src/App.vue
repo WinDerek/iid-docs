@@ -239,4 +239,10 @@ code.inline-code {
   font-family: "Monaco";
   font-size: 85%;
 }
+
+.content_container ol {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.7;
+}
 </style>

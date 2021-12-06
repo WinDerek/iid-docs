@@ -28,7 +28,7 @@ The logo of IID Docs was designed by [Derek](https://github.com/WinDerek) using 
 
 ## TODO
 
-- [ ] Add the login basics
+- [x] Add the login basics
 - [ ] Add the tutorial for `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
 - [x] Adds the tutorial for Git and GitHub
