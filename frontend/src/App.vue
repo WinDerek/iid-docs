@@ -163,6 +163,10 @@ export default {
   text-decoration: none;
 }
 
+.content_container a:hover {
+  text-decoration: underline;
+}
+
 .content__code__container {
   margin: 12px 24px 24px 24px;
 }

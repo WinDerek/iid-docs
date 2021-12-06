@@ -112,6 +112,19 @@ Component for the tutorial.
         Then visit <a href="http://server_ip:your_port/" target="_blank">http://10.19.129.132:41001/</a>
       </p>
 
+      <!-- Shell -->
+      <h2 class="content__subtitle">Shell</h2>
+
+      <p>
+        Good tutorials on shell:
+      </p>
+
+      <ol>
+        <li><a href="https://missing.csail.mit.edu/2020/course-shell/" target="_blank">Course overview + the shell · the missing semester of your cs education</a></li>
+        <li><a href="https://missing.csail.mit.edu/2020/shell-tools/" target="_blank">Shell Tools and Scripting · the missing semester of your cs education</a></li>
+        <li><a href="https://www.shellscript.sh/" target="_blank">https://www.shellscript.sh/</a></li>
+      </ol>
+
       <!-- Git -->
       <h2 class="content__subtitle">Git and GitHub</h2>
 
