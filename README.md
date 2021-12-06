@@ -29,10 +29,10 @@ The logo of IID Docs was designed by [Derek](https://github.com/WinDerek) using 
 ## TODO
 
 - [ ] Re-write the mobile menu
-- [ ] Add the login basics (how to ssh with port)
+- [ ] Add the login basics
 - [ ] Add the tutorial for `nohup` and `tmux`
 - [ ] Adds the installation guide of oh-my-zsh
-- [ ] Adds the tutorial for Git and GitHub
+- [x] Adds the tutorial for Git and GitHub
 - [ ] Adds the acceptance dates for conferences
 - [ ] Dark mode support
 - [ ] Consider static generated sites or server side rendering for this website

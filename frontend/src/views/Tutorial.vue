@@ -48,6 +48,17 @@ $ bash ./Miniconda3-latest-Linux-x86_64.sh</code></pre>
       <p>
         Then visit <a href="http://server_ip:your_port/" target="_blank">http://10.19.129.132:41001/</a>
       </p>
+
+      <!-- Git -->
+      <h2 class="content__subtitle">Git and GitHub</h2>
+
+      <p>
+        <a href="https://git-scm.com/" target="_blank">Git</a> is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+        
+        Keep in mind that Git is different from third-party platforms providing remote Git repository services like GitHub, GitLab, BitBucket and so on. Below is a short Git tutorial.
+      </p>
+
+      <img class="content__image" src="../assets/images/git_tutorial.png" style="width: 400px;" alt="A short Git tutorial." />
     </div>
   </div>
 </template>
