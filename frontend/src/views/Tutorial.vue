@@ -9,7 +9,7 @@ Component for the tutorial.
       <img class="content__header__image" src="../assets/images/tutorial.png" />
 
       <!-- Login Basics -->
-      <h2 class="content__subtitle">Login Basics</h2>
+      <h2 class="content__subtitle">1. Login Basics</h2>
 
       <div class="content__code__container">
         <pre class="code"><code class="language-shell-session">$ ssh ${USERNAME}@${SERVER_IP}</code></pre>
@@ -68,9 +68,27 @@ Component for the tutorial.
       </p>
 
       <!-- Conda -->
-      <h2 class="content__subtitle">Conda</h2>
+      <h2 class="content__subtitle">2. Conda</h2>
 
       <img class="content__image" src="../assets/images/conda_logo.svg" />
+
+      <p>
+        Python is a modern programming language widely used in both academia and industry.
+        
+        However, there are so many Python versions and Python packages (and their different versions).
+        
+        Sometimes you may want to use one version in a project, and another version in another project.
+
+        It seems that there exist so many tools for the isolation of Python versions/packages: Anaconda/Conda, <code class="inline-code"><a href="https://pypi.org/project/virtualenv/" target="_blank">pip</a></code>, <code class="inline-code"><a href="https://pypi.org/project/virtualenv/" target="_blank">virtualenv</a></code>, <code class="inline-code"><a href="https://docs.python.org/3/library/venv.html" target="_blank">venv</a></code>, and so on.
+
+        Which tool should I use?
+      </p>
+
+      <p>
+        One best practice is to use <code class="inline-code">conda</code> as the Python environment management tool and <code class="inline-code">pip</code> as the Python package management tool.
+
+        To do this, create a new Conda environment, acivate it and execute <code class="inline-code">conda install pip</code>.
+      </p>
 
       <p>
         Do not take up excessive disk space, as these servers are shared among all lab members.
@@ -98,7 +116,7 @@ Component for the tutorial.
       </div>
       
       <!-- Jupyter Lab -->
-      <h2 class="content__subtitle">Jupyter Lab</h2>
+      <h2 class="content__subtitle">3. Jupyter Lab</h2>
 
       <p>
         Example of running Jupyter Lab on port 41001:
@@ -113,7 +131,7 @@ Component for the tutorial.
       </p>
 
       <!-- Shell -->
-      <h2 class="content__subtitle">Shell</h2>
+      <h2 class="content__subtitle">4. Shell</h2>
 
       <p>
         Good tutorials on shell:
@@ -126,7 +144,7 @@ Component for the tutorial.
       </ol>
 
       <!-- Git -->
-      <h2 class="content__subtitle">Git and GitHub</h2>
+      <h2 class="content__subtitle">5. Git and GitHub</h2>
 
       <p>
         <a href="https://git-scm.com/" target="_blank">Git</a> is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
@@ -137,7 +155,7 @@ Component for the tutorial.
       <img class="content__image" src="../assets/images/git_tutorial.png" style="width: 400px;" alt="A short Git tutorial." />
 
       <!-- Remote Editors -->
-      <h2 class="content__subtitle">Remote Editors</h2>
+      <h2 class="content__subtitle">6. Remote Editors</h2>
 
       <p>
         Editing files on servers can sometimes be annoying. It is bothering to edit files locally, then transfer them to the server, and do these operations repeatedly.
@@ -157,6 +175,10 @@ Component for the tutorial.
         <li>Sublime Text 3</li>
 
         <a href="https://gist.github.com/connorjan/8b9d9fa8f252cf145ef3e2ad9b708f46" target="_target">https://gist.github.com/connorjan/8b9d9fa8f252cf145ef3e2ad9b708f46</a>
+
+        <li>Jupyter Lab</li>
+
+        As mentioned above, Jupyter Lab can also be used as a remote editor.
       </ol>
     </div>
   </div>
