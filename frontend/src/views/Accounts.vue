@@ -6,7 +6,33 @@ Component for displaying the information of all the accounts on our servers.
     <div class="content_container">
       <h1 class="content__title">Accounts</h1>
 
-      <h2 class="content__subtitle">Table of Accounts</h2>
+      <h2 class="content__subtitle">1. Introduction</h2>
+
+      <p>
+        There are two servers available for the lab members to conduct simulations.
+        
+        The two servers are named <code class="inline-code">iid-server-1</code> and <code class="inline-code">iid-server-2</code> respectively.
+
+        <ul>
+          <li><code class="inline-code">iid-server-1</code>
+            <ul>
+              <li>One GPU (Quadro GV100, 32GB)</li>
+              <li>80 CPUs</li>
+            </ul>
+          </li>
+
+          <li><code class="inline-code">iid-server-2</code>
+            <ul>
+              <li>No external GPU</li>
+              <li>72 CPUs</li>
+            </ul>
+          </li>
+        </ul>
+
+        If your task does not require a GPU, <code class="inline-code">iid-server-2</code> is recommended for you.
+      </p>
+
+      <h2 class="content__subtitle">2. Table of Accounts</h2>
 
       <p>
         The accounts on each server with the corresponding allocated ports are listed below:
