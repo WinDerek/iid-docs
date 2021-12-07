@@ -135,13 +135,14 @@ Component for the tutorial.
 
       <p>
         Good tutorials on shell:
-      </p>
 
-      <ol>
-        <li><a href="https://missing.csail.mit.edu/2020/course-shell/" target="_blank">Course overview + the shell · the missing semester of your cs education</a></li>
-        <li><a href="https://missing.csail.mit.edu/2020/shell-tools/" target="_blank">Shell Tools and Scripting · the missing semester of your cs education</a></li>
-        <li><a href="https://www.shellscript.sh/" target="_blank">https://www.shellscript.sh/</a></li>
-      </ol>
+        <ul>
+          <li><a href="https://missing.csail.mit.edu/2020/course-shell/" target="_blank">Course overview + the shell · the missing semester of your cs education</a></li>
+          <li><a href="https://missing.csail.mit.edu/2020/shell-tools/" target="_blank">Shell Tools and Scripting · the missing semester of your cs education</a></li>
+          <li><a href="https://www.shellscript.sh/" target="_blank">https://www.shellscript.sh/</a></li>
+          <li><a href="https://www.gnu.org/software/bash/manual/" target="_blank">GNU Bash manual - GNU Project - Free Software Foundation</a></li>
+        </ul>
+      </p>
 
       <!-- Git -->
       <h2 class="content__subtitle">5. Git and GitHub</h2>
@@ -161,25 +162,25 @@ Component for the tutorial.
         Editing files on servers can sometimes be annoying. It is bothering to edit files locally, then transfer them to the server, and do these operations repeatedly.
 
         Actually, there exist several solutions for editing files on a server directly.
+
+        <ul>
+          <li>code-server</li>
+
+          VS Code in your browser: <a href="https://github.com/cdr/code-server" target="_blank">https://github.com/cdr/code-server</a>
+
+          <li>VS Code Remote SSH</li>
+
+          <a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank">https://code.visualstudio.com/docs/remote/ssh</a>
+
+          <li>Sublime Text 3</li>
+
+          <a href="https://gist.github.com/connorjan/8b9d9fa8f252cf145ef3e2ad9b708f46" target="_target">https://gist.github.com/connorjan/8b9d9fa8f252cf145ef3e2ad9b708f46</a>
+
+          <li>Jupyter Lab</li>
+
+          As mentioned above, Jupyter Lab can also be used as a remote editor.
+        </ul>
       </p>
-
-      <ol>
-        <li>code-server</li>
-
-        VS Code in your browser: <a href="https://github.com/cdr/code-server" target="_blank">https://github.com/cdr/code-server</a>
-
-        <li>VS Code Remote SSH</li>
-
-        <a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank">https://code.visualstudio.com/docs/remote/ssh</a>
-
-        <li>Sublime Text 3</li>
-
-        <a href="https://gist.github.com/connorjan/8b9d9fa8f252cf145ef3e2ad9b708f46" target="_target">https://gist.github.com/connorjan/8b9d9fa8f252cf145ef3e2ad9b708f46</a>
-
-        <li>Jupyter Lab</li>
-
-        As mentioned above, Jupyter Lab can also be used as a remote editor.
-      </ol>
     </div>
   </div>
 </template>
