@@ -67,10 +67,10 @@ Component for the tutorial.
         Now you can login by <code class="inline-code">ssh test@iid-server-1</code> without typing the password. Cool!
       </p>
 
-      <!-- Conda -->
-      <h2 class="content__subtitle">2. Conda</h2>
+      <!-- Python Environment Management -->
+      <h2 class="content__subtitle">2. Python Environment Management</h2>
 
-      <img class="content__image" src="../assets/images/conda_logo.svg" />
+      <img class="content__image" src="../assets/images/conda_logo.svg" style="width: 400px;" />
 
       <p>
         Python is a modern programming language widely used in both academia and industry.
@@ -79,7 +79,7 @@ Component for the tutorial.
         
         Sometimes you may want to use one version in a project, and another version in another project.
 
-        It seems that there exist so many tools for the isolation of Python versions/packages: Anaconda/Conda, <code class="inline-code"><a href="https://pypi.org/project/virtualenv/" target="_blank">pip</a></code>, <code class="inline-code"><a href="https://pypi.org/project/virtualenv/" target="_blank">virtualenv</a></code>, <code class="inline-code"><a href="https://docs.python.org/3/library/venv.html" target="_blank">venv</a></code>, and so on.
+        It seems that there exist so many tools for the management of Python versions/packages: Anaconda/Conda, <code class="inline-code"><a href="https://pypi.org/project/virtualenv/" target="_blank">pip</a></code>, <code class="inline-code"><a href="https://pypi.org/project/virtualenv/" target="_blank">virtualenv</a></code>, <code class="inline-code"><a href="https://docs.python.org/3/library/venv.html" target="_blank">venv</a></code>, and so on.
 
         Which tool should I use?
       </p>
