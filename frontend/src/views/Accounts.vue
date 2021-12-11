@@ -16,6 +16,7 @@ Component for displaying the information of all the accounts on our servers.
         <ul>
           <li><code class="inline-code">iid-server-1</code>
             <ul>
+              <li>IP address: <code class="inline-code">10.19.129.132</code></li>
               <li>One GPU (Quadro GV100, 32GB)</li>
               <li>80 CPUs</li>
             </ul>
@@ -23,6 +24,7 @@ Component for displaying the information of all the accounts on our servers.
 
           <li><code class="inline-code">iid-server-2</code>
             <ul>
+              <li>IP address: <code class="inline-code">10.19.129.133</code></li>
               <li>No external GPU</li>
               <li>72 CPUs</li>
             </ul>
@@ -41,81 +43,79 @@ Component for displaying the information of all the accounts on our servers.
       <div class="table-container">
         <table class="table-fill">
           <thead>
-          <tr>
-          <th class="text-left">User</th>
-          <th class="text-left">iid-server-1 (10.19.129.132)</th>
-          <th class="text-left">iid-server-2 (10.19.129.133)</th>
-          </tr>
+            <tr>
+              <th class="text-left">User</th>
+              <th class="text-left">Ports on <code class="table-header-code">iid-server-1</code></th>
+              <th class="text-left">Ports on <code class="table-header-code">iid-server-2</code></th>
+            </tr>
           </thead>
 
           <tbody class="table-hover">
-          <tr>
-          <td class="text-left">xin</td>
-          <td class="text-left">41001 - 41100</td>
-          <td class="text-left">None</td>
-          </tr>
-          <tr>
-          <td class="text-left">bian</td>
-          <td class="text-left">41101 - 41200</td>
-          <td class="text-left">None</td>
-          </tr>
-          <tr>
-          <td class="text-left">lengqy</td>
-          <td class="text-left">41201 - 41300</td>
-          <td class="text-left">None</td>
-          </tr>
-          <tr>
-          <td class="text-left">xih</td>
-          <td class="text-left">41301 - 41400</td>
-          <td class="text-left">None</td>
-          </tr>
-          <tr>
-          <td class="text-left">jingye</td>
-          <td class="text-left">41401 - 41500</td>
-          <td class="text-left">None</td>
-          </tr>
+            <tr>
+              <td class="text-left">xin</td>
+              <td class="text-left">41001 ~ 41100</td>
+              <td class="text-left">None</td>
+            </tr>
 
-          <tr>
-          <td class="text-left">derek</td>
-          <td class="text-left">41501 - 41600</td>
-          <td class="text-left">41501 - 41600</td>
-          </tr>
+            <tr>
+              <td class="text-left">bian</td>
+              <td class="text-left">41101 ~ 41200</td>
+              <td class="text-left">None</td>
+            </tr>
 
-          <tr>
-          <td class="text-left">tangyx</td>
-          <td class="text-left">41601 - 41700</td>
-          <td class="text-left">None</td>
-          </tr>
+            <tr>
+              <td class="text-left">lengqy</td>
+              <td class="text-left">41201 ~ 41300</td>
+              <td class="text-left">None</td>
+            </tr>
 
-          <tr>
-          <td class="text-left">xiaoxuan</td>
-          <td class="text-left">41701 - 41800</td>
-          <td class="text-left">None</td>
-          </tr>
+            <tr>
+              <td class="text-left">xih</td>
+              <td class="text-left">41301 ~ 41400</td>
+              <td class="text-left">None</td>
+            </tr>
 
-          <tr>
-          <td class="text-left">wss</td>
-          <td class="text-left">41801 - 41900</td>
-          <td class="text-left">41801 - 41900</td>
-          </tr>
+            <tr>
+              <td class="text-left">jingye</td>
+              <td class="text-left">41401 ~ 41500</td>
+              <td class="text-left">None</td>
+            </tr>
 
-          <tr>
-          <td class="text-left">taou</td>
-          <td class="text-left">41901 - 42000</td>
-          <td class="text-left">None</td>
-          </tr>
+            <tr>
+              <td class="text-left">derek</td>
+              <td class="text-left">41501 ~ 41600</td>
+              <td class="text-left">41501 ~ 41600</td>
+            </tr>
 
-          <tr>
-            <td class="text-left">dingsht</td>
-            <td class="text-left">42001 - 42100</td>
-            <td class="text-left">None</td>
-          </tr>
+            <tr>
+              <td class="text-left">tangyx</td>
+              <td class="text-left">41601 ~ 41700</td>
+              <td class="text-left">None</td>
+            </tr>
 
-          <tr>
-            <td class="text-left">zhangty</td>
-            <td class="text-left">42101 - 42200</td>
-            <td class="text-left">42101 - 42200</td>
-          </tr>
+            <tr>
+              <td class="text-left">xiaoxuan</td>
+              <td class="text-left">41701 ~ 41800</td>
+              <td class="text-left">None</td>
+            </tr>
+
+            <tr>
+              <td class="text-left">wss</td>
+              <td class="text-left">41801 ~ 41900</td>
+              <td class="text-left">41801 ~ 41900</td>
+            </tr>
+
+            <tr>
+              <td class="text-left">zhangty</td>
+              <td class="text-left">41901 ~ 42000</td>
+              <td class="text-left">41901 ~ 42000</td>
+            </tr>
+
+            <tr>
+              <td class="text-left">dingsht</td>
+              <td class="text-left">42001 ~ 42100</td>
+              <td class="text-left">None</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -150,25 +150,36 @@ export default {
 .table-fill {
   font-family: 'monaco';
   background: white;
-  border-radius: 3px;
+  border-radius: 4px;
   border-collapse: collapse;
   max-width: 600px;
   margin: 4px;
   width: auto;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
  
 th {
-  color: #D5DDE5;
-  background: #1b1e24;
+  color: #ffffff;
+  background: #006064;
   border-bottom: 4px solid #9ea7af;
-  border-right: 1px solid #343a45;
+  border-right: 1px solid #9ea7af;
   font-size: 16px;
   font-style: bold;
-  padding: 24px;
-  text-align:left;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto';
+  padding: 20px 24px;
+  text-align: left;
   vertical-align: middle;
+}
+
+th > code.table-header-code {
+  background: #00363a;
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  box-sizing: border-box;
+
+  color: #c1f1f0;
+  font-family: "monaco";
+  font-size: 85%;
 }
 
 th:first-child {
@@ -183,7 +194,7 @@ th:last-child {
 tr {
   border-top: 1px solid #C1C3D1;
   border-bottom: 1px solid #C1C3D1;
-  color:#666B85;
+  color: #666B85;
   font-size: 16px;
   padding: 10px 24px;
   font-weight:normal;
@@ -191,8 +202,8 @@ tr {
 }
 
 tr:hover td {
-  background:#4E5066;
-  color:#FFFFFF;
+  background: #4E5066;
+  color: #FFFFFF;
   border-top: 1px solid #22262e;
 }
 

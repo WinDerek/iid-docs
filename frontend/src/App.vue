@@ -235,7 +235,7 @@ export default {
 
 code.inline-code {
   background: rgba(175, 184, 193, 0.2);
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 0.2em 0.4em;
   box-sizing: border-box;
 
