@@ -129,7 +129,11 @@ Component for displaying the information of all the accounts on our servers.
       </div>
 
       <p>
-        Although it not technically restricted, you should only use the allocated ports for the avoidance of conflicts.
+        Although it is not technically restricted, you should only use the allocated ports for the avoidance of conflicts.
+        
+        The allocated ports can be used for a variety of user applications.
+        
+        For example, if you want to start a Jupyter Lab, you should specify an HTTP port among you allocated ports.
       </p>
       
     </div>
@@ -162,12 +166,13 @@ export default {
 .table-fill {
   font-family: 'monaco';
   background: white;
-  border-radius: 4px;
+  /* border: 1px solid #9ea7af; */
+  border-radius: 8px;
   border-collapse: collapse;
   max-width: 600px;
-  margin: 4px;
+  margin: 10px;
   width: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2);
 }
  
 th {
@@ -181,6 +186,7 @@ th {
   padding: 20px 24px;
   text-align: left;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 th > code.table-header-code {
@@ -195,11 +201,11 @@ th > code.table-header-code {
 }
 
 th:first-child {
-  border-top-left-radius: 3px;
+  border-top-left-radius: 4px;
 }
 
 th:last-child {
-  border-top-right-radius: 3px;
+  border-top-right-radius: 4px;
   border-right: none;
 }
 
@@ -208,9 +214,7 @@ tr {
   border-bottom: 1px solid #C1C3D1;
   color: #666B85;
   font-size: 16px;
-  padding: 10px 24px;
-  font-weight:normal;
-  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+  font-weight: normal;
 }
 
 tr:hover td {
@@ -220,7 +224,7 @@ tr:hover td {
 }
 
 tr:first-child {
-  border-top:none;
+  border-top: none;
 }
 
 tr:last-child {
@@ -236,11 +240,11 @@ tr:nth-child(odd):hover td {
 }
 
 tr:last-child td:first-child {
-  border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 4px;
 }
 
 tr:last-child td:last-child {
-  border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 4px;
 }
 
 td {
@@ -250,7 +254,7 @@ td {
   vertical-align: middle;
   font-weight: 300;
   font-size: 16px;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  /* text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1); */
   border-right: 1px solid #C1C3D1;
 }
 
@@ -284,8 +288,16 @@ td.text-right {
 
 /* For narrow screens. */
 @media only screen and (max-width: 768px) {
-  th, tr, td {
+  th, td {
     font-size: 14px;
+  }
+
+  th {
+    padding: 14px 18px;
+  }
+
+  td {
+    padding: 8px 18px;
   }
 }
 /* Ending for the table styles */

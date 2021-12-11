@@ -233,6 +233,10 @@ export default {
   }
 }
 
+code {
+  white-space: nowrap;
+}
+
 code.inline-code {
   background: rgba(175, 184, 193, 0.2);
   border-radius: 4px;
