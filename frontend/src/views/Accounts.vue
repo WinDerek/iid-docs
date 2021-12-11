@@ -9,6 +9,7 @@ Component for displaying the information of all the accounts on our servers.
       <h2 class="content__subtitle">1. Introduction</h2>
 
       <p>
+
         There are two servers available for the lab members to conduct simulations.
         
         The two servers are named <code class="inline-code">iid-server-1</code> and <code class="inline-code">iid-server-2</code> respectively.
@@ -31,8 +32,15 @@ Component for displaying the information of all the accounts on our servers.
           </li>
         </ul>
 
-        If your task does not require a GPU, <code class="inline-code">iid-server-2</code> is recommended for you.
       </p>
+
+      <div class="content__note">
+        <p>
+          Please note that our GPU resources are quite limited (there is only 1 GPU available on <code class="inline-code">iid-server-1</code>).
+          
+          If your task does not require a GPU, <code class="inline-code">iid-server-2</code> is recommended for you.
+        </p>
+      </div>
 
       <h2 class="content__subtitle">2. Table of Accounts</h2>
 
@@ -119,6 +127,10 @@ Component for displaying the information of all the accounts on our servers.
           </tbody>
         </table>
       </div>
+
+      <p>
+        Although it not technically restricted, you should only use the allocated ports for the avoidance of conflicts.
+      </p>
       
     </div>
   </div>

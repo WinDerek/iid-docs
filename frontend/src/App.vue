@@ -143,7 +143,7 @@ export default {
   /* font-weight: 200; */
   word-wrap: break-word;
 
-  margin: 12px 24px 24px 24px;
+  margin: 16px 24px 16px 24px;
 }
 
 .content__header__image {
