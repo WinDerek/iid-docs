@@ -70,6 +70,8 @@ Component for the tutorial.
       <!-- Python Environment Management -->
       <h2 class="content__subtitle">2. Python Environment Management</h2>
 
+      <h3 class="content__subsubtitle">2.1 Overview</h3>
+
       <img class="content__image" src="../assets/images/conda_logo.svg" style="width: 400px;" />
 
       <p>
@@ -87,14 +89,20 @@ Component for the tutorial.
       <p>
         One best practice is to use <code class="inline-code">conda</code> as the Python environment management tool and <code class="inline-code">pip</code> as the Python package management tool.
 
-        To do this, create a new Conda environment, acivate it and execute <code class="inline-code">conda install pip</code>.
+        Under such a paradigm of Python environment management, the Python environments of all the users on the same server are fully isolated, which is shown in the following diagram.
       </p>
 
-      <h3 class="content__subsubtitle">2.1 Install Miniconda</h3>
+      <img class="content__image" src="../assets/images/python_environment_management.png" style="width: 480px;" />
+
+      <h3 class="content__subsubtitle">2.2 Install Miniconda</h3>
 
       <p>
-        Do not take up excessive disk space, as these servers are shared among all lab members.
+        To apply this paradigm of Python environment management, you first need to install <code class="inline-code">conda</code>.
+
+        Do not take up excessive disk space, as these servers are shared among all the lab members.
+
         To this end, Miniconda is recommended.
+
         Execute the following shell commands to install Miniconda:
       </p>
 
@@ -116,6 +124,14 @@ Component for the tutorial.
           As the official link is not reachable or too slow, here I replace <a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">the original link</a> with the Tsinghua mirror.
         </p>
       </div>
+
+      <h3 class="content__subsubtitle">2.3 Usage</h3>
+
+      <p>
+        Each time you want a new Python environment for a new project, create a new Conda environment, acivate it and execute <code class="inline-code">conda install pip</code>.
+
+        After that, use <code class="inline-code">pip install some_package</code> if you want to install a Python package.
+      </p>
       
       <!-- Jupyter Lab -->
       <h2 class="content__subtitle">3. Jupyter Lab</h2>
@@ -155,7 +171,7 @@ Component for the tutorial.
         Keep in mind that Git is different from third-party platforms providing remote Git repository services like GitHub, GitLab, BitBucket and so on. Below is a cheatsheet for a typical workflow for using Git and GitHub.
       </p>
 
-      <img class="content__image" src="../assets/images/git_tutorial.png" style="width: 400px;" alt="A short Git tutorial." />
+      <img class="content__image" src="../assets/images/git_tutorial.png" style="width: 380px;" alt="A short Git tutorial." />
 
       <!-- Remote Editors -->
       <h2 class="content__subtitle">6. Remote Editors</h2>
