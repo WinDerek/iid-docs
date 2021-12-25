@@ -133,6 +133,15 @@ export default {
   margin: 32px 24px 24px 24px;
 }
 
+.content__subsubtitle {
+  font-family: "OpenSans";
+  font-size: 28px;
+  text-align: start;
+  color: #3c4043;
+  font-weight: 400;
+  margin: 32px 24px 24px 24px;
+}
+
 .content_container p {
   font-family: "Roboto";
   color: #202124;
@@ -230,6 +239,10 @@ export default {
 
   .content__subtitle {
     font-size: 28px;
+  }
+
+  .content__subsubtitle {
+    font-size: 22px;
   }
 }
 

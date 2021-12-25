@@ -90,6 +90,8 @@ Component for the tutorial.
         To do this, create a new Conda environment, acivate it and execute <code class="inline-code">conda install pip</code>.
       </p>
 
+      <h3 class="content__subsubtitle">2.1 Install Miniconda</h3>
+
       <p>
         Do not take up excessive disk space, as these servers are shared among all lab members.
         To this end, Miniconda is recommended.
