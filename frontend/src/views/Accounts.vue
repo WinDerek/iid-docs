@@ -8,9 +8,11 @@ Component for displaying the information of all the accounts on our servers.
 
       <h2 class="content__subtitle">1. Introduction</h2>
 
+      <h3 class="content__subsubtitle">1.1 Computation Platform</h3>
+
       <p>
 
-        There are two servers available for the lab members to conduct simulations.
+        In our computation platform, there are currently two servers available for the lab members to conduct simulations or experiments.
         
         The two servers are named <code class="inline-code">iid-server-1</code> and <code class="inline-code">iid-server-2</code> respectively.
 
@@ -18,7 +20,7 @@ Component for displaying the information of all the accounts on our servers.
           <li><code class="inline-code">iid-server-1</code>
             <ul>
               <li>IP address: <code class="inline-code">10.19.129.132</code></li>
-              <li>One GPU (Quadro GV100, 32GB)</li>
+              <li>One GPU (Quadro GV100, 32 GB)</li>
               <li>80 CPUs</li>
             </ul>
           </li>
@@ -26,7 +28,7 @@ Component for displaying the information of all the accounts on our servers.
           <li><code class="inline-code">iid-server-2</code>
             <ul>
               <li>IP address: <code class="inline-code">10.19.129.133</code></li>
-              <li>No external GPU</li>
+              <li>One GPU (Quadro P400, 1991 MB)</li>
               <li>72 CPUs</li>
             </ul>
           </li>
@@ -36,11 +38,43 @@ Component for displaying the information of all the accounts on our servers.
 
       <div class="content__note">
         <p>
-          Please note that our GPU resources are quite limited (there is only 1 GPU available on <code class="inline-code">iid-server-1</code>).
+          Please note that currently our GPU resources are quite limited (there is only 1 GPU available on <code class="inline-code">iid-server-1</code>).
           
           If your task does not require a GPU, <code class="inline-code">iid-server-2</code> is recommended for you.
         </p>
       </div>
+
+      <h3 class="content__subsubtitle">1.2 Edge Intelligence System</h3>
+
+      <p>
+        There are one host server and three Quanser QCars in our Edge Intelligence System.
+
+        <ul>
+          <li><code class="inline-code">edge-host-0</code>
+            <ul>
+              <li>IP address: <code class="inline-code">10.19.136.60</code></li>
+            </ul>
+          </li>
+
+          <li><code class="inline-code">edge-qcar-1</code>
+            <ul>
+              <li>IP address: <code class="inline-code">10.19.136.61</code></li>
+            </ul>
+          </li>
+
+          <li><code class="inline-code">edge-qcar-2</code>
+            <ul>
+              <li>IP address: <code class="inline-code">10.19.136.62</code></li>
+            </ul>
+          </li>
+
+          <li><code class="inline-code">edge-qcar-3</code>
+            <ul>
+              <li>IP address: <code class="inline-code">10.19.136.63</code></li>
+            </ul>
+          </li>
+        </ul>
+      </p>
 
       <h2 class="content__subtitle">2. Table of Accounts</h2>
 
