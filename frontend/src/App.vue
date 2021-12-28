@@ -158,13 +158,18 @@ export default {
 .content__header__image {
   width: 100%;
   display: block;
-  margin: 12px auto 24px auto;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 4px auto 16px auto;
 }
 
 .content__image {
   display: block;
   width: 80%;
-  margin: 8px auto 16px auto;
+  max-width: 100%;
+  padding: 8px;
+  margin: 0px auto 8px auto;
+  box-sizing: border-box;
 }
 
 .content_container a {
