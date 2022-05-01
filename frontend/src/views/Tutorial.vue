@@ -161,7 +161,7 @@ Component for the tutorial.
 
         <p>
           Here we prefer to install PyTorch via <code class="inline-code">conda</code>
-          because there is a package called `condatoolkit` which is not available in
+          because there is a package called <code class="inline-code">cudatoolkit</code> which is not available in
           <code class="inline-code">pip</code>(PyPI).
         </p>
       </div>
