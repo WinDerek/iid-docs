@@ -132,6 +132,39 @@ Component for the tutorial.
 
         After that, use <code class="inline-code">pip install some_package</code> if you want to install a Python package.
       </p>
+
+      <h3 class="content__subsubtitle">2.4 Usage Example</h3>
+
+      <p>
+        Here is an example for using <code class="inline-code">conda</code>
+        and <code class="inline-code">pip</code> to install PyTorch and JupyterLab:
+      </p>
+
+      <div class="content__code__container">
+        <pre class="code">
+          <code class="language-shell-session">
+            $ conda create --name test_env
+            $ conda activate test_env
+            $ conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+            $ conda install pip
+            $ pip install JupyterLab
+          </code>
+        </pre>
+      </div>
+
+      <div class="content__note">
+        <p>
+          If some packages must be installed via <code class="inline-code">conda</code>,
+          you should install them before installing any packages via
+          <code class="inline-code">pip</code>.
+        </p>
+
+        <p>
+          Here we prefer to install PyTorch via <code class="inline-code">conda</code>
+          because there is a package called `condatoolkit` which is not available in
+          <code class="inline-code">pip</code>(PyPI).
+        </p>
+      </div>
       
       <!-- Jupyter Lab -->
       <h2 class="content__subtitle">3. Jupyter Lab</h2>
